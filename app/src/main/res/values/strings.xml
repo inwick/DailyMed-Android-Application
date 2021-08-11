@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DAILY MED</string>
+    <string name="heading_heart">Heart</string>
+    <string name="heading_water">Water</string>
+    <string name="heading_home">Home</string>
+    <string name="heading_fitness">Fitness</string>
+    <string name="heading_pill">Pill</string>
+</resources>
