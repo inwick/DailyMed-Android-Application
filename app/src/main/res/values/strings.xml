@@ -5,4 +5,14 @@
     <string name="heading_home">Home</string>
     <string name="heading_fitness">Fitness</string>
     <string name="heading_pill">Pill</string>
+    <string name="myDaliyPill">My Daily Pills</string>
+    <string name="RememberYourHealth">Remember Your Health</string>
+    <string name="homeHeading">DAILY MED</string>
+    <string name="sloganName">Live Healthier</string>
+    <string name="desc">Image</string>
+    <string name="IBdesc">Image Button</string>
+    <string name="pReminderTxt">Pill Reminder</string>
+    <string name="calTextId">Health Calculator</string>
+    <string name="wRemindertext">Water Reminder</string>
+    <string name="FitnessTrackerTextId">Fitness Tracker</string>
 </resources>
