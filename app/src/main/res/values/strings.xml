@@ -15,4 +15,6 @@
     <string name="calTextId">Health Calculator</string>
     <string name="wRemindertext">Water Reminder</string>
     <string name="FitnessTrackerTextId">Fitness Tracker</string>
+    <string name="tvWelcome">Welcome</string>
+    <string name="tvWelcome">Welcome</string>
 </resources>
