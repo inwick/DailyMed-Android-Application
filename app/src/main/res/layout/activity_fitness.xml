@@ -11,7 +11,7 @@
     <ImageView
         android:contentDescription="exercise image"
         android:id="@+id/imageView"
-        android:layout_width="99dp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerInParent="true"
         app:srcCompat="@drawable/fitness"
