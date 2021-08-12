@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="@font/carter_one_regular"
             android:text="@string/homeHeading"
             android:textColor="#26B879"
@@ -81,129 +81,130 @@
         app:srcCompat="@drawable/pngwing_com"
         android:layout_marginRight="16dp" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="210dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogoId">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        app:cardCornerRadius="0dp"
-        app:cardBackgroundColor="#72DF77">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
-            android:backgroundTint="#FFFFFF">
-
-            <ImageButton
-                android:id="@+id/ReminderBtnId"
-                android:layout_width="match_parent"
-                android:layout_height="167dp"
-                android:layout_alignParentStart="false"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginBottom="0dp"
-                android:backgroundTint="#72DF77"
-                android:contentDescription="@string/IBdesc"
-                android:src="@drawable/pillrimg"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentRight="true" />
-
-            <TextView
-                android:id="@+id/pillRemainderTextId"
-                android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="132dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginBottom="0dp"
-                android:text="@string/pReminderTxt"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:fontFamily="@font/quicksand_bold"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:gravity="center_horizontal" />
-
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            app:cardBackgroundColor="#FFFFFF">
+            android:layout_height="210dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogoId">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#72DF77"
+                app:cardCornerRadius="0dp">
 
-                <ImageButton
-                    android:contentDescription="@string/IBdesc"
-                    android:id="@+id/calBtnId"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:backgroundTint="#C49FE8"
-                    android:src="@drawable/output_onlinepngtools__1_"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true" />
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF">
 
-                <TextView
-                    android:id="@+id/calTextId"
+                    <ImageButton
+                        android:id="@+id/ReminderBtnId"
+                        android:layout_width="match_parent"
+                        android:layout_height="167dp"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:backgroundTint="#72DF77"
+                        android:contentDescription="@string/IBdesc"
+                        android:src="@drawable/pillrimg" />
+
+                    <TextView
+                        android:id="@+id/pillRemainderTextId"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="132dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/pReminderTxt"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/quicksand_bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="133dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:fontFamily="@font/quicksand_bold"
-                    android:text="@string/calTextId"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:fontFamily="@font/quicksand_bold"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center_horizontal" />
+                    android:layout_height="match_parent">
 
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/calBtnId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:backgroundTint="#C49FE8"
+                        android:contentDescription="@string/IBdesc"
+                        android:src="@drawable/output_onlinepngtools__1_" />
+
+                    <TextView
+                        android:id="@+id/calTextId"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="133dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/calTextId"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/quicksand_bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
