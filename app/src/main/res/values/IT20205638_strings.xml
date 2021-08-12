@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="landing_addentry">Add Entry</string>
+    <string name="landing_edit">History</string>
+    <string name="landing_tips">Health Tips</string>
+    <string name="landing_summary">Summary</string>
+    <string name="landing_heading">Heart Rate Monitor</string>
+    <string name="landing_slogan">Care for your Heart</string>
+</resources>
