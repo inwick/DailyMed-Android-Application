@@ -27,13 +27,11 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="731dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="307dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
             android:background="#00008577"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -41,304 +39,153 @@
 
         <TextView
             android:id="@+id/headId"
-            android:layout_width="538dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginEnd="169dp"
-            android:layout_marginRight="169dp"
-            android:layout_marginBottom="240dp"
             android:fontFamily="@font/carter_one_regular"
-            android:text="Heart Rate Monitor"
+            android:text="@string/landing_heading"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
             app:fontFamily="@font/carter_one_regular"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/LogoId"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             tools:ignore="UnknownId" />
 
         <TextView
             android:id="@+id/sloganId"
-            android:layout_width="538dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="169dp"
-            android:layout_marginRight="169dp"
-            android:layout_marginBottom="217dp"
             android:fontFamily="@font/comfortaa_bold"
-            android:text="Care for your Heart"
+            android:text="@string/landing_slogan"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/LogoId"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headId"
             tools:ignore="UnknownId" />
 
         <ImageView
             android:id="@+id/LogoId"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="562dp"
-            android:layout_marginLeft="562dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="232dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
             android:contentDescription="@string/desc"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/headId"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:srcCompat="@drawable/heart_ic_main_image"
             tools:ignore="VectorDrawableCompat" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="76dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+
         <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="0dp"
-            android:layout_height="220dp"
-            android:layout_marginTop="100dp"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+            <ImageView
+                android:id="@+id/heart_img_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#72DF77"
-                app:cardCornerRadius="0dp">
+                app:srcCompat="@drawable/heart_ic_main_add"
+                tools:ignore="VectorDrawableCompat" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
-                    android:backgroundTint="#FFFFFF">
-
-                    <ImageButton
-                        android:id="@+id/ReminderBtnId"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-
-                        android:layout_alignParentStart="false"
-                        android:layout_alignParentLeft="false"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="-2dp"
-                        android:layout_marginRight="-2dp"
-                        android:layout_marginBottom="0dp"
-                        android:backgroundTint="#72DF77"
-                        android:contentDescription="@string/IBdesc"
-                        android:src="@drawable/heart_ic_main_add" />
-
-                    <TextView
-                        android:id="@+id/pillRemainderTextId"
-                        android:layout_width="match_parent"
-                        android:layout_height="38dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="140dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:gravity="center_horizontal"
-                        android:text="Add Entry"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:fontFamily="@font/quicksand_bold" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+            <Button
+                android:id="@+id/btn_heart_add"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#FFFFFF">
+                android:text="@string/landing_addentry"
+                android:backgroundTint="@color/landing_btn_color"/>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageButton
-                        android:id="@+id/calBtnId"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:backgroundTint="#C49FE8"
-                        android:contentDescription="@string/IBdesc"
-                        android:src="@drawable/heart_ic_main_edit" />
-
-                    <TextView
-                        android:id="@+id/calTextId"
-                        android:layout_width="match_parent"
-                        android:layout_height="38dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="140dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:fontFamily="@font/quicksand_bold"
-                        android:gravity="center_horizontal"
-                        android:text="Edit Entry"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:fontFamily="@font/quicksand_bold" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+            <ImageView
+                android:id="@+id/heart_img_history"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#FFFFFF">
+                app:srcCompat="@drawable/heart_ic_main_edit"
+                tools:ignore="VectorDrawableCompat" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageButton
-                        android:id="@+id/waterBtnId"
-                        android:layout_width="match_parent"
-                        android:layout_height="165dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:backgroundTint="#7F8EE8"
-                        android:contentDescription="@string/IBdesc"
-                        android:src="@drawable/heart_ic_main_tips" />
-
-                    <TextView
-                        android:id="@+id/wReminderTextId"
-                        android:layout_width="175dp"
-                        android:layout_height="38dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="1dp"
-                        android:layout_marginLeft="1dp"
-                        android:layout_marginTop="140dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:fontFamily="@font/quicksand_bold"
-                        android:gravity="center_horizontal"
-                        android:text="Health Tips"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+            <Button
+                android:id="@+id/btn_heart_history"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#FFFFFF">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageButton
-                        android:id="@+id/fitnessBtnId"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:backgroundTint="#F37970"
-                        android:contentDescription="@string/IBdesc"
-                        android:src="@drawable/heart_ic_main_history" />
-
-                    <TextView
-                        android:id="@+id/fitnessTextId"
-                        android:layout_width="157dp"
-                        android:layout_height="37dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="140dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:fontFamily="@font/quicksand_bold"
-                        android:gravity="center_horizontal"
-                        android:text="History"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:fontFamily="@font/quicksand_bold" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                android:backgroundTint="@color/landing_btn_color"
+                android:text="@string/landing_edit" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/heart_img_tips"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/heart_ic_main_tips"
+                tools:ignore="VectorDrawableCompat" />
+
+            <Button
+                android:id="@+id/btn_heart_tips"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/landing_tips"
+                android:backgroundTint="@color/landing_btn_color"/>
+
+            <ImageView
+                android:id="@+id/heart_img_report"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/heart_ic_main_history"
+                tools:ignore="VectorDrawableCompat" />
+
+            <Button
+                android:id="@+id/btn_heart_summary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/landing_btn_color"
+                android:text="@string/landing_summary" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>

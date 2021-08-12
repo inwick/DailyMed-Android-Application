@@ -4,13 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DAILYMED">
-        <activity android:name=".Fitness"/>
+        <activity android:name=".activity_heart_add_entry"></activity>
+        <activity android:name=".Fitness" />
         <activity android:name=".Pill" />
         <activity android:name=".Water" />
         <activity android:name=".Heart" />
