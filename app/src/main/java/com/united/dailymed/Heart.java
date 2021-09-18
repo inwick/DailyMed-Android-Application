@@ -14,7 +14,7 @@ public class Heart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_heart);
+        setContentView(R.layout.activity_landing_heart);
 
         //Initialize And Assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
