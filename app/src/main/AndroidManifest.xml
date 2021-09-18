@@ -4,13 +4,31 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DAILYMED">
-        <activity android:name=".Fitness"/>
+        <activity android:name=".Createnewcup">
+
+        </activity>
+        <activity android:name=".waterDetails"> <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter> </activity>
+        <activity android:name=".Selectwateramount"></activity>
+        <activity android:name=".Changewatersettings"> </activity>
+        <activity android:name=".Waterdashboard"> </activity>
+        <activity android:name=".amtCoffee"> </activity>
+        <activity android:name=".amtWater"> </activity>
+        <activity android:name=".amtJuice"> </activity>
+        <activity android:name=".amtTea"> </activity>
+        <activity android:name=".amtCola"> </activity>
+        <activity android:name=".amtEnergyDrink"> </activity>
+
+        <activity android:name=".Fitness" />
         <activity android:name=".Pill" />
         <activity android:name=".Water" />
         <activity android:name=".Heart" />
@@ -21,6 +39,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
