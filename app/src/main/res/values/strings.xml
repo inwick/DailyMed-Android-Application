@@ -15,4 +15,10 @@
     <string name="calTextId">Health Calculator</string>
     <string name="wRemindertext">Water Reminder</string>
     <string name="FitnessTrackerTextId">Fitness Tracker</string>
+    <string name="adddietplanbutto">ADD DIET PLAN</string>
+    <string name="adddietheder">ADD DIET PLAN</string>
+    <string name="edit_diet_day_drop" />
+    <string name="edit_diet_dfood">Pizza</string>
+
+
 </resources>

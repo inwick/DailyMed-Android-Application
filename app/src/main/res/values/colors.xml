@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="navbarcolor">@android:color/darker_gray</color>
+    <color name="yellow2">#ffd7ba </color>
+    <color name="background">#f8edeb</color>
+
 </resources>
