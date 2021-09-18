@@ -25,17 +25,17 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#00008577"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/menu" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/navbarcolor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/menu" />
 
         <TextView
             android:id="@+id/headId"
@@ -72,7 +72,7 @@
     <ImageView
         android:id="@+id/LogoId"
         android:layout_width="0dp"
-        android:layout_height="160dp"
+        android:layout_height="140dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/desc"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +85,6 @@
             android:id="@+id/linearLayout"
             android:layout_width="0dp"
             android:layout_height="210dp"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -175,7 +174,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="0dp"
                         android:layout_marginBottom="0dp"
-                        android:backgroundTint="#C49FE8"
+                        android:backgroundTint="@color/heart_landing_boxes"
                         android:contentDescription="@string/IBdesc"
                         android:src="@drawable/output_onlinepngtools__1_" />
 
@@ -298,7 +297,7 @@
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
                     android:backgroundTint="#F37970"
-                    android:src="@drawable/fitnessimg"
+                    android:src="@drawable/home_main_diet_img"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
 
@@ -315,7 +314,7 @@
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
                     android:fontFamily="@font/quicksand_bold"
-                    android:text="@string/FitnessTrackerTextId"
+                    android:text="@string/DietTxt"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
