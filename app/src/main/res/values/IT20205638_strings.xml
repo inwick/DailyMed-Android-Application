@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="landing_addentry">Add Entry</string>
+    <string name="landing_edit">History</string>
+    <string name="landing_tips">Health Tips</string>
+    <string name="landing_summary">Summary</string>
+    <string name="landing_heading">Heart Rate Monitor</string>
+    <string name="landing_slogan">Care for your Heart</string>
+    <string name="heading_heart_add_entry">ADD ENTRY</string>
+    <string name="heart_entry_heartrate_hint">Enter Heart Rate (BPS)</string>
+    <string name="heart_entry_date_hint">Select the date</string>
+    <string name="heart_entry_btn_record_txt">RECORD</string>
+    <string name="health_tips_heading">TIPS FOR WELLNESS OF THE HEART</string>
+    <string name="heart_report_heading">Your Average Heart Rate is</string>
+    <string name="heart_report_tips_txt">Refer Tips Section to improve your score.</string>
+    <string name="heart_tips_btn_tips_browse">Browse Tips</string>
+</resources>

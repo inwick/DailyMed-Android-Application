@@ -3,7 +3,7 @@
     <string name="heading_heart">Heart</string>
     <string name="heading_water">Water</string>
     <string name="heading_home">Home</string>
-    <string name="heading_fitness">Fitness</string>
+    <string name="heading_fitness">Diet</string>
     <string name="heading_pill">Pill</string>
     <string name="myDaliyPill">My Daily Pills</string>
     <string name="RememberYourHealth">Remember Your Health</string>
@@ -12,8 +12,9 @@
     <string name="desc">Image</string>
     <string name="IBdesc">Image Button</string>
     <string name="pReminderTxt">Pill Reminder</string>
-    <string name="calTextId">Health Calculator</string>
+    <string name="calTextId">Heart Rate Monitor</string>
     <string name="wRemindertext">Water Reminder</string>
+
     <string name="FitnessTrackerTextId">Fitness Tracker</string>
 
 
@@ -31,5 +32,17 @@
 
 
 
+
+
+    <string name="DietTxt">Diet Planner</string>
+    <string name="heart_tip_07">7. Check your numbers regularly.</string>
+    <string name="heart_tip_06">6. Manage stress.</string>
+    <string name="heart_tip_05">5. Don’t smoke.</string>
+    <string name="heart_tip_04">4. Sleep eight hours each night.</string>
+    <string name="heart_tip_03">3. Get regular exercise.</string>
+    <string name="heart_tip_02">2.Maintain a healthy weight.</string>
+    <string name="heart_tip_01">1. Eat a nutrient-rich diet.</string>
+    <string name="heart_tips_heading">TIPS FOR WELLNESS OF THE HEART</string>
+    <string name="heart_history_heading">HISTORY</string>
 
 </resources>
