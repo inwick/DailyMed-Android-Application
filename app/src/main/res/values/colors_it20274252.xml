@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="imgBtnColor">#72DF77</color>
+    <color name="todoPillColor">#98E89B</color>
+    <color name="PressedtodoPillColor">#96D398</color>
+    <color name="fabColor">#F6884D</color>
+    <color name="btnColor">#26B879</color>
+    <color name="pNavColor">#81E470</color>
+    <color name="headColor">#0F5C3B</color>
+</resources>

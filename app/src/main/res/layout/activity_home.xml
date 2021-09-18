@@ -103,7 +103,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
             android:backgroundTint="#FFFFFF">
 
             <ImageButton
@@ -111,40 +111,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="167dp"
                 android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginRight="-1dp"
                 android:layout_marginBottom="0dp"
                 android:backgroundTint="#72DF77"
                 android:contentDescription="@string/IBdesc"
                 android:src="@drawable/pillrimg"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentRight="true" />
+                android:layout_marginLeft="0dp" />
 
             <TextView
                 android:id="@+id/pillRemainderTextId"
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="132dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
+                android:gravity="center_horizontal"
                 android:text="@string/pReminderTxt"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:fontFamily="@font/quicksand_bold"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:gravity="center_horizontal" />
+                app:fontFamily="@font/quicksand_bold" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -154,52 +156,52 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            app:cardBackgroundColor="#FFFFFF">
+            app:cardBackgroundColor="#C49FE8">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:contentDescription="@string/IBdesc"
                     android:id="@+id/calBtnId"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
                     android:backgroundTint="#C49FE8"
-                    android:src="@drawable/output_onlinepngtools__1_"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true" />
+                    android:contentDescription="@string/IBdesc"
+                    android:src="@drawable/output_onlinepngtools__1_" />
 
                 <TextView
                     android:id="@+id/calTextId"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="133dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
                     android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center_horizontal"
                     android:text="@string/calTextId"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:fontFamily="@font/quicksand_bold"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center_horizontal" />
+                    app:fontFamily="@font/quicksand_bold" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -216,115 +218,115 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        app:cardBackgroundColor="#FFFFFF">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:contentDescription="@string/IBdesc"
-                android:id="@+id/waterBtnId"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginBottom="0dp"
-                android:backgroundTint="#7F8EE8"
-                android:src="@drawable/waterbtlimg"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true" />
-
-            <TextView
-                android:id="@+id/wReminderTextId"
-                android:layout_width="175dp"
-                android:layout_height="38dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="132dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginBottom="0dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="@string/wRemindertext"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="0dp"
-                android:gravity="center_horizontal"
-                android:layout_marginLeft="1dp" />
-
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            app:cardBackgroundColor="#FFFFFF">
+            app:cardBackgroundColor="#7F8EE8">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageButton
+                    android:id="@+id/waterBtnId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:backgroundTint="#7F8EE8"
                     android:contentDescription="@string/IBdesc"
+                    android:src="@drawable/waterbtlimg" />
+
+                <TextView
+                    android:id="@+id/wReminderTextId"
+                    android:layout_width="175dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="132dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/wRemindertext"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#F37970">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
                     android:id="@+id/fitnessBtnId"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
                     android:backgroundTint="#F37970"
-                    android:src="@drawable/fitnessimg"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true" />
+                    android:contentDescription="@string/IBdesc"
+                    android:src="@drawable/fitnessimg" />
 
                 <TextView
                     android:id="@+id/fitnessTextId"
                     android:layout_width="174dp"
                     android:layout_height="38dp"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
                     android:layout_marginTop="133dp"
                     android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
                     android:layout_marginBottom="0dp"
                     android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center_horizontal"
                     android:text="@string/FitnessTrackerTextId"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:fontFamily="@font/quicksand_bold"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="0dp"
-                    android:gravity="center_horizontal" />
+                    app:fontFamily="@font/quicksand_bold" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
