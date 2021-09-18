@@ -15,7 +15,7 @@
     <string name="calTextId">Health Calculator</string>
     <string name="wRemindertext">Water Reminder</string>
     <string name="FitnessTrackerTextId">Fitness Tracker</string>
-    <string name="tvWelcome">Welcome</string>
+
 
 
     <!-- Strings used for fragments for navigation -->
@@ -26,26 +26,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="txtCoffee">Coffee</string>
-    <string name="txtJuice">Juice</string>
-    <string name="txtTea">Tea</string>
-    <string name="txtCola">Cola</string>
-    <string name="txtWine">Wine</string>
-    <string name="txtEnergydrink">Energy Drink</string>
-    <string name="txtWater">Water</string>
-    <string name="tvcupselect">Select a drink</string>
-    <string name="cancelCoffee">cancelCoffee</string>
-    <string name="WineDone">done</string>
 
-    <string name="EnergyDrinkDone">Done</string>
 
-    <string name="ColaDone">Done</string>
-    <string name="EnergyDone">Done</string>
-    <string name="JuiceDone">Done</string>
-    <string name="TeaDone">Done</string>
-    <string name="WaterDone">Done</string>
-    <string name="CoffeeDone">Done</string>
-    <string name="Winedone">Done</string>
+
+
 
 
 </resources>
