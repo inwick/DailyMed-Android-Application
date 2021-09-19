@@ -167,7 +167,7 @@
                     android:layout_marginRight="90dp"
                     android:clickable="true"
                     android:padding="10dp"
-                    android:text="@string/heart_add_entry_btn_update"
+                    android:text="UPDATE"
                     android:textColor="@color/heart_landing_btn_text"
                     app:backgroundTint="@color/heart_landing_boxes" />
 

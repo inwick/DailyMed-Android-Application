@@ -115,7 +115,7 @@
                 android:layout_weight="1"
                 android:paddingLeft="15dp"
                 android:text="Date"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </LinearLayout>

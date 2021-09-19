@@ -30,5 +30,4 @@
     <string name="heart_record_date_head">Date</string>
     <string name="heart_modify_entry">MODIFY ENTRY</string>
     <string name="heart_add_entry_btn_delete">DELETE</string>
-    <string name="heart_add_entry_btn_update">UPDATE</string>
 </resources>
