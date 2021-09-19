@@ -2,46 +2,40 @@ package com.united.dailymed;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
-
-public class activity_heart_history extends AppCompatActivity {
+public class HeartReport extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_heart_history);
-         ArrayList<HeartRateModel> HeartRateModelArrayList;
-         HeartDBHandler HeartdbHandler;
-        HeartRateRVAdapter courseRVAdapter;
-         RecyclerView coursesRV;
+        setContentView(R.layout.activity_heart_report);
 
-        // initializing our all variables.
-        HeartRateModelArrayList = new ArrayList<>();
-        HeartdbHandler = new HeartDBHandler(activity_heart_history.this);
+        Button btn_tips = findViewById(R.id.heart_btn_report_tips);
+        TextView textview = findViewById(R.id.heart_report_average_result);
 
-        // getting our course array
-        // list from db handler class.
-        HeartRateModelArrayList = HeartdbHandler.readHeartRates();
+        HeartDBHandler heartdb  = new HeartDBHandler(HeartReport.this);
+        int HeartTotal = heartdb.sumHeartRates();
+        int noOfEntries = heartdb.noOfEntries();
 
-        // on below line passing our array lost to our adapter class.
-        courseRVAdapter = new HeartRateRVAdapter(HeartRateModelArrayList, activity_heart_history.this);
-        coursesRV = findViewById(R.id.idRVCourses);
+        float Average = (float) HeartTotal / (float) noOfEntries;
 
-        // setting layout manager for our recycler view.
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity_heart_history.this, RecyclerView.VERTICAL, false);
-        coursesRV.setLayoutManager(linearLayoutManager);
+        textview.setText(String.valueOf((double)Math.round(Average * 10d/10d)));
 
-        // setting our adapter to recycler view.
-        coursesRV.setAdapter(courseRVAdapter);
+
+        btn_tips.setOnClickListener(v -> {
+            Intent i = new Intent(HeartReport.this, HeartTips.class);
+            startActivity(i);
+        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 

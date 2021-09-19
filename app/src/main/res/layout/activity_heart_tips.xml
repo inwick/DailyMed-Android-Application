@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
-    android:background="@color/white">
+    android:background="@drawable/heart_report_background">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -118,7 +118,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/heart_tip_01"
                 android:layout_marginRight="5dp"
-                android:textColor="@color/heart_landing_boxes"
+                android:textColor="@color/heart_landing_headings"
                 android:textSize="20sp" />
 
             <TextView
@@ -128,11 +128,11 @@
                 android:gravity="center_vertical"
                 android:text="@string/heart_tip_02"
                 android:textSize="20sp"
-                android:textColor="@color/heart_landing_boxes"
+                android:textColor="@color/heart_landing_headings"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="10dp"
-                android:background="@color/heart_tips_box_secondary"/>
+                android:background="#80FFF0F3"/>
 
 
             <TextView
@@ -142,7 +142,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/heart_tip_03"
                 android:textSize="20sp"
-                android:textColor="@color/heart_landing_boxes"
+                android:textColor="@color/heart_landing_headings"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="10dp"
@@ -155,11 +155,11 @@
                 android:gravity="center_vertical"
                 android:text="@string/heart_tip_04"
                 android:textSize="20sp"
-                android:textColor="@color/heart_landing_boxes"
+                android:textColor="@color/heart_landing_headings"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginRight="5dp"
-                android:background="@color/heart_tips_box_secondary"/>
+                android:background="#80FFF0F3"/>
             <TextView
                 android:id="@+id/helath_tip_05"
                 android:layout_width="match_parent"
@@ -167,7 +167,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/heart_tip_05"
                 android:textSize="20sp"
-                android:textColor="@color/heart_landing_boxes"
+                android:textColor="@color/heart_landing_headings"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginRight="5dp"
@@ -179,11 +179,11 @@
                 android:gravity="center_vertical"
                 android:text="@string/heart_tip_06"
                 android:textSize="20sp"
-                android:textColor="@color/heart_landing_boxes"
+                android:textColor="@color/heart_landing_headings"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
-                android:background="@color/heart_tips_box_secondary"/>
+                android:background="#80FFF0F3"/>
             <TextView
                 android:id="@+id/helath_tip_07"
                 android:layout_width="match_parent"
@@ -192,7 +192,7 @@
                 android:layout_marginRight="5dp"
                 android:text="@string/heart_tip_07"
                 android:textSize="20sp"
-                android:textColor="@color/heart_landing_boxes"
+                android:textColor="@color/heart_landing_headings"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/heart_landing_boxes_middle"/>

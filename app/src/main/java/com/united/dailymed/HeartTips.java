@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class activity_heart_tips extends AppCompatActivity {
+public class HeartTips extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

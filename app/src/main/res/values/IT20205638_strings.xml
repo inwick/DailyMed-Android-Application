@@ -13,7 +13,7 @@
     <string name="health_tips_heading">TIPS FOR WELLNESS OF THE HEART</string>
     <string name="heart_report_heading">Your Average Heart Rate is</string>
     <string name="heart_report_tips_txt">Refer Tips Section to improve your score.</string>
-    <string name="heart_tips_btn_tips_browse">Browse Tips</string>
+    <string name="heart_tips_btn_tips_browse">Browse Heart Wellness Tips</string>
     <string name="heart_rate_history">Heart-Rate History</string>
     <string name="tap_on_a_record_to_edit_or_delete_it">(Tap on a record to edit or delete it.)</string>
     <string name="heart_tip_07">7. Check your numbers regularly.</string>
@@ -30,4 +30,5 @@
     <string name="heart_record_date_head">Date</string>
     <string name="heart_modify_entry">MODIFY ENTRY</string>
     <string name="heart_add_entry_btn_delete">DELETE</string>
+    <string name="heart_rate">Heart-Rate</string>
 </resources>

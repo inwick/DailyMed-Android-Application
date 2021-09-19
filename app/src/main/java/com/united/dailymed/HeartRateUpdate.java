@@ -150,7 +150,7 @@ public class HeartRateUpdate extends AppCompatActivity {
                 Toast.makeText(HeartRateUpdate.this, "Record Updated Successfully.", Toast.LENGTH_SHORT).show();
 
                 // launching our main activity.
-                Intent i = new Intent(HeartRateUpdate.this, activity_heart_history.class);
+                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
                 startActivity(i);
             }
         });
@@ -166,7 +166,7 @@ public class HeartRateUpdate extends AppCompatActivity {
                 //calling a method to delete our course.
 //                dbHandler.deleteHeartEntry(id);
 //                Toast.makeText(HeartRateUpdate.this, "Deleted the course", Toast.LENGTH_SHORT).show();
-//                Intent i = new Intent(HeartRateUpdate.this, activity_heart_history.class);
+//                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
 //                startActivity(i);
             }
         });
@@ -187,14 +187,14 @@ public class HeartRateUpdate extends AppCompatActivity {
                 id = getIntent().getStringExtra("id");
                 dbHandler.deleteHeartEntry(id);
                 Toast.makeText(HeartRateUpdate.this, "Record Deleted Successfully..", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(HeartRateUpdate.this, activity_heart_history.class);
+                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
                 startActivity(i);
             }
         });
         alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent i = new Intent(HeartRateUpdate.this, activity_heart_history.class);
+                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
             }
         });
 

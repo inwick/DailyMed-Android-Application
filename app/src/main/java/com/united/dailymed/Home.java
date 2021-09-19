@@ -3,11 +3,16 @@ package com.united.dailymed;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.Calendar;
 
 public class Home extends AppCompatActivity {
 
@@ -15,6 +20,14 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        ImageButton imgBtn = findViewById(R.id.homeHeartBtnId);
+
+
+        imgBtn.setOnClickListener(v -> {
+            Intent i = new Intent(Home.this, Heart.class);
+            startActivity(i);
+        });
 
         //Initialize And Assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
