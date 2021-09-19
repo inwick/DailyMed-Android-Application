@@ -85,7 +85,7 @@ public class activity_heart_add_entry extends AppCompatActivity {
 
             // validating if the text fields are empty or not.
             if (hRate.isEmpty() || entryDate.isEmpty()) {
-                Toast.makeText(activity_heart_add_entry.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity_heart_add_entry.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -94,7 +94,7 @@ public class activity_heart_add_entry extends AppCompatActivity {
             dbHandler.addNewHeartEntry(hRate, entryDate);
 
             // after adding the data we are displaying a toast message.
-            Toast.makeText(activity_heart_add_entry.this, "Heart-Rate Saved..", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity_heart_add_entry.this, "Heart-Rate Saved.", Toast.LENGTH_SHORT).show();
             HeartRateEntry.setText("");
             edittext.setText("");
         });
