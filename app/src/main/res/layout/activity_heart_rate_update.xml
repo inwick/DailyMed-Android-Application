@@ -65,10 +65,10 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/comfortaa_bold"
                     android:gravity="center_horizontal"
-                    android:text="@string/heading_heart_add_entry"
+                    android:text="@string/heart_modify_entry"
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_headings"
                     android:textSize="30sp" />
@@ -76,18 +76,53 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
-                    android:contentDescription= "heart add entry image"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
                     app:srcCompat="@drawable/heart_img_botnav"
                     tools:ignore="VectorDrawableCompat" />
 
-                <EditText
-                    android:id="@+id/heart_add_heartrate"
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/heart_record_id"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/idEdtid"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/heart_input_rounded_corners"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="@string/heart_entry_heartrate_hint"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/heart_landing_boxes"
+                    android:textColorHint="#ff8fa3"
+                    android:textSize="18sp"
+                    tools:ignore="Deprecated" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Heart-Rate"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/idEdtCourseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
                     android:background="@drawable/heart_input_rounded_corners"
                     android:gravity="center"
@@ -97,15 +132,24 @@
                     android:textColor="@color/heart_landing_boxes"
                     android:textColorHint="#ff8fa3" />
 
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/heart_add_entry_date_head"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
                 <EditText
-                    android:id="@+id/heart_add_date"
+                    android:id="@+id/idEdtCourseDuration"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="30dp"
-                    android:focusable="false"
                     android:layout_marginRight="50dp"
                     android:background="@drawable/heart_input_rounded_corners"
+                    android:focusable="false"
                     android:gravity="center"
                     android:hint="@string/heart_entry_date_hint"
                     android:inputType="date"
@@ -115,16 +159,28 @@
 
 
                 <Button
-                    android:id="@+id/btn_add_heart_entry"
+                    android:id="@+id/idBtnUpdateCourse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="90dp"
-                    android:layout_marginTop="30dp"
-                    android:clickable="true"
-                    android:focusable="false"
-                    android:padding="10dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginRight="90dp"
-                    android:text="@string/heart_entry_btn_record_txt"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="@string/heart_add_entry_btn_delete"
+                    android:textColor="@color/heart_landing_btn_text"
+                    app:backgroundTint="@color/heart_landing_boxes" />
+
+                <Button
+                    android:id="@+id/idBtnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="90dp"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="@string/heart_add_entry_btn_delete"
                     android:textColor="@color/heart_landing_btn_text"
                     app:backgroundTint="@color/heart_landing_boxes" />
             </LinearLayout>
@@ -137,3 +193,8 @@
 
 
 </RelativeLayout>
+
+
+
+
+
