@@ -1,4 +1,4 @@
- package com.united.dailymed;
+package com.united.dailymed;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -39,9 +39,7 @@ public class HeartRateUpdate extends AppCompatActivity {
         Button updateCourseBtn;
         Button deleteCourseBtn;
         HeartDBHandler dbHandler;
-        String courseName,courseDuration,id;
-
-
+        String courseName, courseDuration, id;
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -53,26 +51,26 @@ public class HeartRateUpdate extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch(menuItem.getItemId()) {
+                switch (menuItem.getItemId()) {
                     case R.id.Heart:
-                        startActivity(new Intent(getApplicationContext(),Heart.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Heart.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.home:
-                        startActivity(new Intent(getApplicationContext(),Home.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Home.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.Fitness:
-                        startActivity(new Intent(getApplicationContext(),Fitness.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Fitness.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.Pill:
-                        startActivity(new Intent(getApplicationContext(),Pill.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Pill.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.Water:
-                        startActivity(new Intent(getApplicationContext(),Water.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Water.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
 
@@ -85,7 +83,7 @@ public class HeartRateUpdate extends AppCompatActivity {
         // initializing all our variables.
         idEdt = findViewById(R.id.idEdtid);
         courseNameEdt = findViewById(R.id.idEdtCourseName);
-        edittext= findViewById(R.id.idEdtCourseDuration);
+        edittext = findViewById(R.id.idEdtCourseDuration);
         updateCourseBtn = findViewById(R.id.idBtnUpdateCourse);
         deleteCourseBtn = findViewById(R.id.idBtnDelete);
 
@@ -119,7 +117,8 @@ public class HeartRateUpdate extends AppCompatActivity {
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
                 updateLabel();
             }
-            private void updateLabel(){
+
+            private void updateLabel() {
                 String myFormat = "MM/dd/yy"; //In which you need put here
                 SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
@@ -127,8 +126,6 @@ public class HeartRateUpdate extends AppCompatActivity {
             }
 
         };
-
-
 
         edittext.setOnClickListener(new View.OnClickListener() {
 
@@ -140,10 +137,6 @@ public class HeartRateUpdate extends AppCompatActivity {
             }
         });
 
-
-
-
-
         // adding on click listener to our update course button.
         updateCourseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,21 +144,16 @@ public class HeartRateUpdate extends AppCompatActivity {
 
                 // inside this method we are calling an update course
                 // method and passing all our edit text values.
-                dbHandler.updateCourse( idEdt.getText().toString(),courseNameEdt.getText().toString(), edittext.getText().toString());
+                dbHandler.updateCourse(idEdt.getText().toString(), courseNameEdt.getText().toString(), edittext.getText().toString());
 
                 // displaying a toast message that our course has been updated.
-                Toast.makeText(HeartRateUpdate.this, "Record Updated Successfully..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HeartRateUpdate.this, "Record Updated Successfully.", Toast.LENGTH_SHORT).show();
 
                 // launching our main activity.
                 Intent i = new Intent(HeartRateUpdate.this, activity_heart_history.class);
                 startActivity(i);
             }
         });
-
-
-
-
-
 
 
         deleteCourseBtn.setOnClickListener(new View.OnClickListener() {
@@ -185,7 +173,7 @@ public class HeartRateUpdate extends AppCompatActivity {
 
     }
 
-    public void showAlertDialog(View v){
+    public void showAlertDialog(View v) {
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("DELETE CONFIRMATION");
@@ -193,7 +181,8 @@ public class HeartRateUpdate extends AppCompatActivity {
         alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                HeartDBHandler dbHandler = new HeartDBHandler(HeartRateUpdate.this);;
+                HeartDBHandler dbHandler = new HeartDBHandler(HeartRateUpdate.this);
+                ;
                 String id;
                 id = getIntent().getStringExtra("id");
                 dbHandler.deleteHeartEntry(id);
@@ -213,7 +202,6 @@ public class HeartRateUpdate extends AppCompatActivity {
         alertDialog.show();
 
     }
-
 
 
 }

@@ -20,11 +20,7 @@
       
         <activity android:name=".Createnewcup">
         </activity>
-        <activity android:name=".waterDetails"> <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter> </activity>
+        <activity android:name=".waterDetails"></activity>
         <activity android:name=".Selectwateramount"></activity>
         <activity android:name=".Changewatersettings"> </activity>
         <activity android:name=".Waterdashboard"> </activity>

@@ -1,4 +1,5 @@
 package com.united.dailymed;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,9 +22,6 @@ import java.util.Locale;
 public class activity_heart_add_entry extends AppCompatActivity {
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +31,7 @@ public class activity_heart_add_entry extends AppCompatActivity {
 
         final Calendar myCalendar = Calendar.getInstance();
 
-        EditText edittext= (EditText) findViewById(R.id.heart_add_date);
+        EditText edittext = (EditText) findViewById(R.id.heart_add_date);
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 
             @Override
@@ -44,7 +42,8 @@ public class activity_heart_add_entry extends AppCompatActivity {
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
                 updateLabel();
             }
-            private void updateLabel(){
+
+            private void updateLabel() {
                 String myFormat = "MM/dd/yy"; //In which you need put here
                 SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
@@ -52,7 +51,6 @@ public class activity_heart_add_entry extends AppCompatActivity {
             }
 
         };
-
 
 
         edittext.setOnClickListener(new View.OnClickListener() {
@@ -66,14 +64,9 @@ public class activity_heart_add_entry extends AppCompatActivity {
         });
 
 
-
-
-
-
-
-         EditText HeartRateEntry= findViewById(R.id.heart_add_heartrate);
-       Button addHeartEntry = findViewById(R.id.btn_add_heart_entry);
-        HeartDBHandler dbHandler= new HeartDBHandler(activity_heart_add_entry.this);
+        EditText HeartRateEntry = findViewById(R.id.heart_add_heartrate);
+        Button addHeartEntry = findViewById(R.id.btn_add_heart_entry);
+        HeartDBHandler dbHandler = new HeartDBHandler(activity_heart_add_entry.this);
 
 
         addHeartEntry.setOnClickListener(v -> {
@@ -85,7 +78,7 @@ public class activity_heart_add_entry extends AppCompatActivity {
 
             // validating if the text fields are empty or not.
             if (hRate.isEmpty() || entryDate.isEmpty()) {
-                Toast.makeText(activity_heart_add_entry.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity_heart_add_entry.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -94,9 +87,11 @@ public class activity_heart_add_entry extends AppCompatActivity {
             dbHandler.addNewHeartEntry(hRate, entryDate);
 
             // after adding the data we are displaying a toast message.
-            Toast.makeText(activity_heart_add_entry.this, "Heart-Rate Saved..", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity_heart_add_entry.this, "Heart-Rate Saved.", Toast.LENGTH_SHORT).show();
             HeartRateEntry.setText("");
             edittext.setText("");
+            Intent i = new Intent(activity_heart_add_entry.this, activity_heart_history.class);
+            startActivity(i);
         });
 
 
