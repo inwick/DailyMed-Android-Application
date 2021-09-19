@@ -12,7 +12,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="90dp"
         android:background="@color/white"
         android:layout_margin="3dp"
         android:orientation="vertical">
@@ -44,7 +44,7 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="5dp"
                 android:paddingRight="0dp"
-                android:text="Heart-Rate"
+                android:text="@string/heart_rate"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 

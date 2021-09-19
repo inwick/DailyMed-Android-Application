@@ -104,6 +104,64 @@ public class HeartDBHandler extends SQLiteOpenHelper {
     }
 
 
+
+
+
+    public int sumHeartRates() {
+        // on below line we are creating a
+        // database for reading our database.
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // on below line we are creating a cursor with query to read data from database.
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+
+        int total = 0;
+        // moving our cursor to first position.
+        if (cursorCourses.moveToFirst()) {
+            do {
+                // on below line we are adding the data from cursor to our array list.
+                total = total + Integer.parseInt(cursorCourses.getString(1));
+
+
+            } while (cursorCourses.moveToNext());
+            // moving our cursor to next.
+        }
+        // at last closing our cursor
+        // and returning our array list.
+
+        cursorCourses.close();
+        return total;
+
+    }
+
+    public int noOfEntries() {
+        // on below line we are creating a
+        // database for reading our database.
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // on below line we are creating a cursor with query to read data from database.
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+
+        int total = 0;
+        // moving our cursor to first position.
+        if (cursorCourses.moveToFirst()) {
+            do {
+                // on below line we are adding the data from cursor to our array list.
+                total = total + 1;
+
+
+            } while (cursorCourses.moveToNext());
+            // moving our cursor to next.
+        }
+        // at last closing our cursor
+        // and returning our array list.
+
+        cursorCourses.close();
+        return total;
+
+    }
+
+
     // below is the method for updating our courses
     public void updateCourse(String id,String originalCourseName,String courseDuration) {
 

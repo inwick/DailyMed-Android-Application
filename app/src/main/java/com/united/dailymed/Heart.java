@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -28,25 +27,25 @@ public class Heart extends AppCompatActivity {
 
         button_add_heart.setOnClickListener(view -> {
 
-            Intent i = new Intent(getApplicationContext(),activity_heart_add_entry.class);
+            Intent i = new Intent(getApplicationContext(), HeartAddEntry.class);
             startActivity(i);
 
         });
         button_add_history.setOnClickListener(view -> {
 
-            Intent i = new Intent(getApplicationContext(),activity_heart_history.class);
+            Intent i = new Intent(getApplicationContext(), HeartHistory.class);
             startActivity(i);
 
         });
         button_add_tips.setOnClickListener(view -> {
 
-            Intent i = new Intent(getApplicationContext(),activity_heart_tips.class);
+            Intent i = new Intent(getApplicationContext(), HeartTips.class);
             startActivity(i);
 
         });
         button_add_summary.setOnClickListener(view -> {
 
-            Intent i = new Intent(getApplicationContext(),activity_heart_report.class);
+            Intent i = new Intent(getApplicationContext(), HeartReport.class);
             startActivity(i);
 
         });

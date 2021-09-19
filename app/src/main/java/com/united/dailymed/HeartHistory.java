@@ -2,6 +2,8 @@ package com.united.dailymed;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,12 +11,37 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class activity_heart_report extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class HeartHistory extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_heart_report);
+        setContentView(R.layout.activity_heart_history);
+         ArrayList<HeartRateModel> HeartRateModelArrayList;
+         HeartDBHandler HeartdbHandler;
+        HeartRateRVAdapter courseRVAdapter;
+         RecyclerView coursesRV;
+
+        // initializing our all variables.
+        HeartRateModelArrayList = new ArrayList<>();
+        HeartdbHandler = new HeartDBHandler(HeartHistory.this);
+
+        // getting our course array
+        // list from db handler class.
+        HeartRateModelArrayList = HeartdbHandler.readHeartRates();
+
+        // on below line passing our array lost to our adapter class.
+        courseRVAdapter = new HeartRateRVAdapter(HeartRateModelArrayList, HeartHistory.this);
+        coursesRV = findViewById(R.id.idRVCourses);
+
+        // setting layout manager for our recycler view.
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(HeartHistory.this, RecyclerView.VERTICAL, false);
+        coursesRV.setLayoutManager(linearLayoutManager);
+
+        // setting our adapter to recycler view.
+        coursesRV.setAdapter(courseRVAdapter);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 

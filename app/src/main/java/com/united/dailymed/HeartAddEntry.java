@@ -19,7 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class activity_heart_add_entry extends AppCompatActivity {
+public class HeartAddEntry extends AppCompatActivity {
 
 
     @Override
@@ -57,7 +57,7 @@ public class activity_heart_add_entry extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                new DatePickerDialog(activity_heart_add_entry.this, date, myCalendar
+                new DatePickerDialog(HeartAddEntry.this, date, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
@@ -66,7 +66,7 @@ public class activity_heart_add_entry extends AppCompatActivity {
 
         EditText HeartRateEntry = findViewById(R.id.heart_add_heartrate);
         Button addHeartEntry = findViewById(R.id.btn_add_heart_entry);
-        HeartDBHandler dbHandler = new HeartDBHandler(activity_heart_add_entry.this);
+        HeartDBHandler dbHandler = new HeartDBHandler(HeartAddEntry.this);
 
 
         addHeartEntry.setOnClickListener(v -> {
@@ -78,7 +78,7 @@ public class activity_heart_add_entry extends AppCompatActivity {
 
             // validating if the text fields are empty or not.
             if (hRate.isEmpty() || entryDate.isEmpty()) {
-                Toast.makeText(activity_heart_add_entry.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HeartAddEntry.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -87,10 +87,10 @@ public class activity_heart_add_entry extends AppCompatActivity {
             dbHandler.addNewHeartEntry(hRate, entryDate);
 
             // after adding the data we are displaying a toast message.
-            Toast.makeText(activity_heart_add_entry.this, "Heart-Rate Saved.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(HeartAddEntry.this, "Heart-Rate Saved.", Toast.LENGTH_SHORT).show();
             HeartRateEntry.setText("");
             edittext.setText("");
-            Intent i = new Intent(activity_heart_add_entry.this, activity_heart_history.class);
+            Intent i = new Intent(HeartAddEntry.this, HeartHistory.class);
             startActivity(i);
         });
 

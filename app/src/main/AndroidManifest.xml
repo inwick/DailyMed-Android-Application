@@ -12,10 +12,10 @@
         android:theme="@style/Theme.DAILYMED">
 
         <activity android:name=".HeartRateUpdate"/>
-        <activity android:name=".activity_heart_report"/>
-        <activity android:name=".activity_heart_tips"/>
-        <activity android:name=".activity_heart_history"/>
-        <activity android:name=".activity_heart_add_entry"/>
+        <activity android:name=".HeartReport"/>
+        <activity android:name=".HeartTips"/>
+        <activity android:name=".HeartHistory"/>
+        <activity android:name=".HeartAddEntry"/>
         
       
         <activity android:name=".Createnewcup">

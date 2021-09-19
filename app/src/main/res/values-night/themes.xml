@@ -3,7 +3,7 @@
     <style name="Theme.DAILYMED" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/navbarcolor</item>
+        <item name="colorPrimaryVariant">@color/black </item>
         <item name="colorOnPrimary">@color/heart_landing_btn_text</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

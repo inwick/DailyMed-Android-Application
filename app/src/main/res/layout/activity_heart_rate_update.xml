@@ -45,7 +45,9 @@
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:background="@drawable/heart_report_background"
             android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar">
@@ -56,7 +58,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="120dp"
                 android:layout_marginRight="40dp"
-                android:layout_marginBottom="60dp"
+                android:layout_marginBottom="100dp"
                 android:background="@color/heart_landing_boxes_middle"
                 android:orientation="vertical">
 

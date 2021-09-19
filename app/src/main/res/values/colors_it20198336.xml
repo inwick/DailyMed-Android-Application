@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="navbarcolor">#3F37C9</color>
+
     <color name="waterbutton">#2196F3</color>
     <color name="watersettingsclr">#003A86</color>
     <color name="settings">#3A86FF</color>
