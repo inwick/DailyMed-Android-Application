@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -13,8 +15,41 @@ public class Heart extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_heart);
+
+        final Button button_add_heart = (Button) findViewById(R.id.btn_heart_add);
+        final Button button_add_history = (Button) findViewById(R.id.btn_heart_history);
+        final Button button_add_tips = (Button) findViewById(R.id.btn_heart_tips);
+        final Button button_add_summary = (Button) findViewById(R.id.btn_heart_summary);
+
+        button_add_heart.setOnClickListener(view -> {
+
+            Intent i = new Intent(getApplicationContext(),activity_heart_add_entry.class);
+            startActivity(i);
+
+        });
+        button_add_history.setOnClickListener(view -> {
+
+            Intent i = new Intent(getApplicationContext(),activity_heart_history.class);
+            startActivity(i);
+
+        });
+        button_add_tips.setOnClickListener(view -> {
+
+            Intent i = new Intent(getApplicationContext(),activity_heart_tips.class);
+            startActivity(i);
+
+        });
+        button_add_summary.setOnClickListener(view -> {
+
+            Intent i = new Intent(getApplicationContext(),activity_heart_report.class);
+            startActivity(i);
+
+        });
 
         //Initialize And Assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
