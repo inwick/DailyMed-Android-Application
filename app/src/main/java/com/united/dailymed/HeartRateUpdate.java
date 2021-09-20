@@ -144,7 +144,7 @@ public class HeartRateUpdate extends AppCompatActivity {
 
                 // inside this method we are calling an update course
                 // method and passing all our edit text values.
-                dbHandler.updateCourse(idEdt.getText().toString(), courseNameEdt.getText().toString(), edittext.getText().toString());
+                dbHandler.updateHeartRate(idEdt.getText().toString(), courseNameEdt.getText().toString(), edittext.getText().toString());
 
                 // displaying a toast message that our course has been updated.
                 Toast.makeText(HeartRateUpdate.this, "Record Updated Successfully.", Toast.LENGTH_SHORT).show();

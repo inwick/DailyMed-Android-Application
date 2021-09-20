@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/heart_landing_boxes"
+        app:itemBackground="@color/heart_landing_new"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
@@ -41,26 +41,33 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/menu" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@drawable/heart_report_background"
-            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/linearLayout5"
+                android:layout_width="360dp"
+                android:layout_height="600dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
-                android:layout_marginBottom="100dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/heart_landing_boxes_middle"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
 
                 <TextView
@@ -116,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="center_horizontal"
-                    android:text="Heart-Rate"
+                    android:text="@string/heart_rate_modify_entry_heartrate"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
@@ -169,7 +176,7 @@
                     android:layout_marginRight="90dp"
                     android:clickable="true"
                     android:padding="10dp"
-                    android:text="UPDATE"
+                    android:text="@string/heart_rate_modify_btn_update"
                     android:textColor="@color/heart_landing_btn_text"
                     app:backgroundTint="@color/heart_landing_boxes" />
 
@@ -186,7 +193,7 @@
                     android:textColor="@color/heart_landing_btn_text"
                     app:backgroundTint="@color/heart_landing_boxes" />
             </LinearLayout>
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

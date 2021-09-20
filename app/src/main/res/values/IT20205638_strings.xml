@@ -31,4 +31,6 @@
     <string name="heart_modify_entry">MODIFY ENTRY</string>
     <string name="heart_add_entry_btn_delete">DELETE</string>
     <string name="heart_rate">Heart-Rate</string>
+    <string name="heart_rate_modify_entry_heartrate">Heart-Rate</string>
+    <string name="heart_rate_modify_btn_update">UPDATE</string>
 </resources>

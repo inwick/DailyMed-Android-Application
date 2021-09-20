@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/heart_landing_boxes"
+        app:itemBackground="@color/heart_landing_new"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
@@ -34,7 +34,7 @@
             android:id="@+id/toolbar"
             android:layout_width="0dp"
             android:layout_height="45dp"
-            android:background="#ef476f"
+            android:background="@color/heart_landing_new"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +112,10 @@
             android:id="@+id/linearLayout4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="140dp"
             android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -124,7 +127,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="10dp"
-                android:background="@color/heart_landing_boxes_middle"
+                android:background="#2DE91E63"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -142,9 +145,9 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:textColor="@color/black"
                     android:backgroundTint="@color/landing_btn_color"
-                    android:text="@string/landing_addentry" />
+                    android:text="@string/landing_addentry"
+                    android:textColor="@color/black" />
 
 
             </LinearLayout>
@@ -174,8 +177,8 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/landing_btn_color"
-                    android:textColor="@color/black"
-                    android:text="@string/landing_edit" />
+                    android:text="@string/landing_edit"
+                    android:textColor="@color/black" />
 
 
             </LinearLayout>
@@ -205,8 +208,8 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/landing_btn_color"
-                    android:textColor="@color/black"
-                    android:text="@string/landing_tips" />
+                    android:text="@string/landing_tips"
+                    android:textColor="@color/black" />
 
 
             </LinearLayout>
@@ -235,8 +238,8 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/landing_btn_color"
-                    android:textColor="@color/black"
-                    android:text="@string/landing_summary" />
+                    android:text="@string/landing_summary"
+                    android:textColor="@color/black" />
 
 
             </LinearLayout>

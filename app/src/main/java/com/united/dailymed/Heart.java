@@ -18,7 +18,7 @@ public class Heart extends AppCompatActivity {
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_landing_heart);
+        setContentView(R.layout.activity_heart_landing);
 
         final Button button_add_heart = (Button) findViewById(R.id.btn_heart_add);
         final Button button_add_history = (Button) findViewById(R.id.btn_heart_history);
