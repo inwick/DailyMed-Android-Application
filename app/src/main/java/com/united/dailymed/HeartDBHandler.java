@@ -163,7 +163,7 @@ public class HeartDBHandler extends SQLiteOpenHelper {
 
 
     // below is the method for updating our courses
-    public void updateCourse(String id,String originalCourseName,String courseDuration) {
+    public void updateHeartRate(String id, String rate, String date) {
 
         // calling a method to get writable database.
         SQLiteDatabase db = this.getWritableDatabase();
@@ -172,8 +172,8 @@ public class HeartDBHandler extends SQLiteOpenHelper {
         // on below line we are passing all values
         // along with its key and value pair.
         values.put(ID_COL, id);
-        values.put(RATE_COL, originalCourseName);
-        values.put(DATE_COL, courseDuration);
+        values.put(RATE_COL, rate);
+        values.put(DATE_COL, date);
 
 
         // on below line we are calling a update method to update our database and passing our values.

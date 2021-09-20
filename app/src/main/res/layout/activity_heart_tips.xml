@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/heart_landing_boxes"
+        app:itemBackground="@color/heart_landing_new"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
@@ -34,7 +34,7 @@
             android:id="@+id/toolbar"
             android:layout_width="0dp"
             android:layout_height="45dp"
-            android:background="@color/heart_landing_boxes"
+            android:background="@color/heart_landing_new"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"

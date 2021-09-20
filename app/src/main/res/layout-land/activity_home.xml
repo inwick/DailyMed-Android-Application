@@ -8,7 +8,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
-    android:background="@color/white">
+    android:background="@drawable/home_background"
+    >
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -22,51 +23,39 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="75dp"
-        android:background="#FFFFFF">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:background="#00008577"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/menu" />
+        android:background="@drawable/home_background">
 
         <TextView
             android:id="@+id/headId"
-            android:layout_width="0dp"
+            android:layout_width="624dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/carter_one_regular"
             android:text="@string/homeHeading"
             android:textColor="#26B879"
             android:textSize="30sp"
             android:textStyle="bold"
             app:fontFamily="@font/carter_one_regular"
-            app:layout_constraintEnd_toStartOf="@+id/LogoId"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="UnknownId" />
 
         <TextView
             android:id="@+id/sloganId"
-            android:layout_width="0dp"
+            android:layout_width="620dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="45dp"
             android:fontFamily="@font/comfortaa_bold"
             android:text="@string/sloganName"
             android:textColor="#26B879"
-            app:layout_constraintEnd_toStartOf="@+id/LogoId"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="UnknownId" />
@@ -75,40 +64,43 @@
             android:id="@+id/LogoId"
             android:layout_width="200dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
             android:contentDescription="@string/desc"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/headId"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/pngwing_com" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="0dp"
+            android:layout_width="700dp"
             android:layout_height="210dp"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginRight="82dp"
+            android:layout_marginBottom="28dp"
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/LogoId"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#72DF77"
                 app:cardCornerRadius="0dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#FFFFFF"
-                    android:backgroundTint="#FFFFFF">
+                    android:backgroundTint="#6F74C2A0">
 
                     <ImageButton
                         android:id="@+id/ReminderBtnId"
@@ -121,10 +113,11 @@
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginTop="3dp"
                         android:layout_marginEnd="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:backgroundTint="#72DF77"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="-3dp"
+                        android:backgroundTint="#7F72DF77"
                         android:contentDescription="@string/IBdesc"
                         android:src="@drawable/pillrimg" />
 
@@ -157,15 +150,15 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_weight="1"
-                app:cardBackgroundColor="#FFFFFF">
+                android:layout_weight="1">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#62FF4D6D">
 
                     <ImageButton
-                        android:id="@+id/calBtnId"
+                        android:id="@+id/homeHeartBtnId"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_alignParentStart="true"
@@ -178,7 +171,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="0dp"
                         android:layout_marginBottom="0dp"
-                        android:backgroundTint="@color/heart_landing_boxes"
+                        android:backgroundTint="#5AFF4D6D"
                         android:contentDescription="@string/IBdesc"
                         android:src="@drawable/output_onlinepngtools__1_" />
 
@@ -193,7 +186,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="130dp"
+                        android:layout_marginTop="132dp"
                         android:layout_marginEnd="0dp"
                         android:layout_marginBottom="0dp"
                         android:fontFamily="@font/quicksand_bold"
@@ -201,7 +194,7 @@
                         android:text="@string/calTextId"
                         android:textAlignment="center"
                         android:textColor="#FFFFFF"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:textStyle="bold"
                         app:fontFamily="@font/quicksand_bold" />
 
@@ -212,12 +205,12 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_weight="1"
-                app:cardBackgroundColor="#FFFFFF">
+                android:layout_weight="1">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#9B7F8EE8">
 
                     <ImageButton
                         android:id="@+id/waterBtnId"
@@ -233,7 +226,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="0dp"
                         android:layout_marginBottom="0dp"
-                        android:backgroundTint="#7F8EE8"
+                        android:backgroundTint="#A37F8EE8"
                         android:contentDescription="@string/IBdesc"
                         android:src="@drawable/waterbtlimg" />
 
@@ -268,12 +261,13 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_weight="1"
-                app:cardBackgroundColor="#FFFFFF">
+                android:layout_weight="1">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#77F37970"
+                    >
 
                     <ImageButton
                         android:id="@+id/fitnessBtnId"
@@ -289,7 +283,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="0dp"
                         android:layout_marginBottom="0dp"
-                        android:backgroundTint="#F37970"
+                        android:backgroundTint="#ABF37970"
                         android:contentDescription="@string/IBdesc"
                         android:src="@drawable/fitnessimg" />
 

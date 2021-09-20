@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,7 +32,7 @@ public class HeartRateRVAdapter extends RecyclerView.Adapter<HeartRateRVAdapter.
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // on below line we are inflating our layout
         // file for our recycler view items.
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.heart_rate_rv_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_heart_rate_rv_item, parent, false);
         return new ViewHolder(view);
     }
 
