@@ -183,11 +183,13 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="90dp"
                         android:clickable="true"
+                        android:focusable="false"
                         android:fontFamily="@font/comfortaa_bold"
+                        android:gravity="center"
                         android:text="@string/heart_rate_modify_btn_update"
                         android:textColor="@color/heart_landing_btn_text"
-                        app:backgroundTint="@color/heart_landing_boxes"
-                        android:focusable="false" />
+                        android:textSize="12sp"
+                        app:backgroundTint="@color/heart_landing_boxes" />
 
                     <Button
                         android:id="@+id/idBtnDelete"
@@ -198,11 +200,13 @@
                         android:layout_marginRight="90dp"
                         android:layout_marginBottom="5dp"
                         android:clickable="true"
+                        android:focusable="false"
                         android:fontFamily="@font/comfortaa_bold"
+                        android:gravity="center"
                         android:text="@string/heart_add_entry_btn_delete"
                         android:textColor="@color/heart_landing_btn_text"
-                        app:backgroundTint="@color/heart_landing_boxes"
-                        android:focusable="false" />
+                        android:textSize="12sp"
+                        app:backgroundTint="@color/heart_landing_boxes" />
 
 
                 </LinearLayout>
