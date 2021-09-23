@@ -45,7 +45,7 @@
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@drawable/heart_report_background"
+            android:background="@drawable/heart_new_land_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,14 +76,11 @@
                         android:textColor="@color/heart_landing_headings"
                         android:textSize="30sp" />
 
-                    <ImageView
-                        android:id="@+id/imageView2"
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="match_parent"
-                        android:layout_height="160dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="50dp"
-                        app:srcCompat="@drawable/heart_img_botnav"
-                        tools:ignore="VectorDrawableCompat" />
+                        android:layout_height="200dp"
+                        android:src="@drawable/heart_add_gif"
+                        />
 
                 </LinearLayout>
 
@@ -111,7 +109,7 @@
                         android:textColor="@color/heart_landing_headings"
                         android:textColorHint="@color/heart_landing_headings"
                         android:textSize="18sp"
-                        tools:ignore="Deprecated" />
+                        tools:ignore="Autofill,Deprecated" />
 
 
                     <EditText
@@ -128,7 +126,9 @@
                         android:inputType="number"
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_boxes"
-                        android:textColorHint="@color/heart_landing_headings" />
+                        android:textColorHint="@color/heart_landing_headings"
+                        android:importantForAutofill="no"
+                        tools:ignore="TextFields" />
 
 
                     <Button
@@ -139,10 +139,11 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginRight="90dp"
                         android:clickable="true"
+                        android:focusable="false"
+                        android:fontFamily="@font/comfortaa_bold"
                         android:text="@string/heart_entry_btn_record_txt"
                         android:textColor="@color/heart_landing_btn_text"
-                        app:backgroundTint="@color/heart_landing_boxes"
-                        android:focusable="false" />
+                        app:backgroundTint="@color/heart_landing_boxes" />
 
 
                 </LinearLayout>

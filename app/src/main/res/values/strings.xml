@@ -26,4 +26,7 @@
     <string name="DietTxt">Diet Planner</string>
     <string name="heart_record_id">RECORD ID</string>
     <string name="heart_add_entry_date_head">Date</string>
+    <string name="splashscreenback">splashScreenBack</string>
+    <string name="splash_head">DAILY MED</string>
+    <string name="splash_copyright">BY 2021 UNITED DEVELOPERS™</string>
 </resources>

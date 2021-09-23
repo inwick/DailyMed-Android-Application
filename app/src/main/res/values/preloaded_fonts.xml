@@ -3,8 +3,10 @@
     <array name="preloaded_fonts" translatable="false">
 
 
-
         <item>@font/allerta</item>
+        <item>@font/athiti</item>
+        <item>@font/athiti_extralight</item>
+        <item>@font/audiowide</item>
         <item>@font/baloo_bhai</item>
 
     </array>

@@ -45,7 +45,7 @@
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@drawable/heart_report_background"
+            android:background="@drawable/heart_new_land_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,13 +76,12 @@
                         android:textColor="@color/heart_landing_headings"
                         android:textSize="30sp" />
 
-                    <ImageView
-                        android:id="@+id/imageView2"
+                    <pl.droidsonroids.gif.GifImageView
                         android:layout_width="match_parent"
-                        android:layout_height="180dp"
-                        android:layout_marginTop="10dp"
-                        app:srcCompat="@drawable/heart_img_botnav"
-                        tools:ignore="VectorDrawableCompat" />
+                        android:layout_height="220dp"
+                        android:src="@drawable/heart_add_gif"
+                        />
+
 
                 </LinearLayout>
 
@@ -120,7 +120,7 @@
                         android:textColor="@color/heart_landing_boxes"
                         android:textColorHint="#ff8fa3"
                         android:textSize="18sp"
-                        tools:ignore="Deprecated" />
+                        tools:ignore="Deprecated,TextViewEdits" />
 
                     <TextView
                         android:id="@+id/textView8"
@@ -145,7 +145,8 @@
                         android:inputType="number"
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_boxes"
-                        android:textColorHint="#ff8fa3" />
+                        android:textColorHint="#ff8fa3"
+                        tools:ignore="Autofill" />
 
                     <TextView
                         android:id="@+id/textView9"
@@ -171,7 +172,8 @@
                         android:inputType="date"
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_boxes"
-                        android:textColorHint="#ff8fa3" />
+                        android:textColorHint="#ff8fa3"
+                        tools:ignore="Autofill" />
 
                     <Button
                         android:id="@+id/idBtnUpdateCourse"
@@ -181,8 +183,12 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="90dp"
                         android:clickable="true"
+                        android:focusable="false"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:gravity="center"
                         android:text="@string/heart_rate_modify_btn_update"
                         android:textColor="@color/heart_landing_btn_text"
+                        android:textSize="12sp"
                         app:backgroundTint="@color/heart_landing_boxes" />
 
                     <Button
@@ -194,8 +200,12 @@
                         android:layout_marginRight="90dp"
                         android:layout_marginBottom="5dp"
                         android:clickable="true"
+                        android:focusable="false"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:gravity="center"
                         android:text="@string/heart_add_entry_btn_delete"
                         android:textColor="@color/heart_landing_btn_text"
+                        android:textSize="12sp"
                         app:backgroundTint="@color/heart_landing_boxes" />
 
 

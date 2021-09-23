@@ -35,11 +35,11 @@ public class HeartRateUpdate extends AppCompatActivity {
         // variables for our edit text, button, strings and dbhandler class.
         EditText courseNameEdt;
         TextView idEdt;
-        EditText edittext;
-        Button updateCourseBtn;
-        Button deleteCourseBtn;
+        EditText dateInput;
+        Button updateEntryBtn;
+        Button deleteEntryBtn;
         HeartDBHandler dbHandler;
-        String courseName, courseDuration, id;
+        String rateFetched, dateFetched, id;
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -48,44 +48,40 @@ public class HeartRateUpdate extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.Heart);
 
         //Perform ItemSelectedListener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.Heart:
-                        startActivity(new Intent(getApplicationContext(), Heart.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.home:
-                        startActivity(new Intent(getApplicationContext(), Home.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.Fitness:
-                        startActivity(new Intent(getApplicationContext(), Fitness.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.Pill:
-                        startActivity(new Intent(getApplicationContext(), Pill.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.Water:
-                        startActivity(new Intent(getApplicationContext(), Water.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-
-                return false;
+        bottomNavigationView.setOnNavigationItemSelectedListener(menuItem -> {
+            switch (menuItem.getItemId()) {
+                case R.id.Heart:
+                    startActivity(new Intent(getApplicationContext(), Heart.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.home:
+                    startActivity(new Intent(getApplicationContext(), Home.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.Fitness:
+                    startActivity(new Intent(getApplicationContext(), Fitness.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.Pill:
+                    startActivity(new Intent(getApplicationContext(), Pill.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.Water:
+                    startActivity(new Intent(getApplicationContext(), Water.class));
+                    overridePendingTransition(0, 0);
+                    return true;
             }
 
+            return false;
         });
 
 
         // initializing all our variables.
         idEdt = findViewById(R.id.idEdtid);
         courseNameEdt = findViewById(R.id.idEdtCourseName);
-        edittext = findViewById(R.id.idEdtCourseDuration);
-        updateCourseBtn = findViewById(R.id.idBtnUpdateCourse);
-        deleteCourseBtn = findViewById(R.id.idBtnDelete);
+        dateInput = findViewById(R.id.idEdtCourseDuration);
+        updateEntryBtn = findViewById(R.id.idBtnUpdateCourse);
+        deleteEntryBtn = findViewById(R.id.idBtnDelete);
 
         // on below line we are initialing our dbhandler class.
         dbHandler = new HeartDBHandler(HeartRateUpdate.this);
@@ -93,15 +89,15 @@ public class HeartRateUpdate extends AppCompatActivity {
         // on below lines we are getting data which
         // we passed in our adapter class.
         id = getIntent().getStringExtra("id");
-        courseName = getIntent().getStringExtra("rate");
-        courseDuration = getIntent().getStringExtra("date");
+        rateFetched = getIntent().getStringExtra("rate");
+        dateFetched = getIntent().getStringExtra("date");
 
 
         // setting data to edit text
         // of our update activity.
         idEdt.setText(id);
-        courseNameEdt.setText(courseName);
-        edittext.setText(courseDuration);
+        courseNameEdt.setText(rateFetched);
+        dateInput.setText(dateFetched);
 
 
         final Calendar myCalendar = Calendar.getInstance();
@@ -122,54 +118,37 @@ public class HeartRateUpdate extends AppCompatActivity {
                 String myFormat = "MM/dd/yy"; //In which you need put here
                 SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
-                edittext.setText(sdf.format(myCalendar.getTime()));
+                dateInput.setText(sdf.format(myCalendar.getTime()));
             }
 
         };
 
-        edittext.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                new DatePickerDialog(HeartRateUpdate.this, date, myCalendar
-                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
-                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
-            }
-        });
+        dateInput.setOnClickListener(v -> new DatePickerDialog(HeartRateUpdate.this, date, myCalendar
+                .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                myCalendar.get(Calendar.DAY_OF_MONTH)).show());
 
         // adding on click listener to our update course button.
-        updateCourseBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        updateEntryBtn.setOnClickListener(v -> {
 
-                // inside this method we are calling an update course
-                // method and passing all our edit text values.
-                dbHandler.updateHeartRate(idEdt.getText().toString(), courseNameEdt.getText().toString(), edittext.getText().toString());
+            // inside this method we are calling an update course
+            // method and passing all our edit text values.
+            dbHandler.updateHeartRate(idEdt.getText().toString(), courseNameEdt.getText().toString(), dateInput.getText().toString());
 
-                // displaying a toast message that our course has been updated.
-                Toast.makeText(HeartRateUpdate.this, "Record Updated Successfully.", Toast.LENGTH_SHORT).show();
+            // displaying a toast message that our course has been updated.
+            Toast.makeText(HeartRateUpdate.this, "Record Updated Successfully.", Toast.LENGTH_SHORT).show();
 
-                // launching our main activity.
-                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
-                startActivity(i);
-            }
+            // launching our main activity.
+            Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
+            startActivity(i);
         });
 
 
-        deleteCourseBtn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                showAlertDialog(v);
-
-                //calling a method to delete our course.
-//                dbHandler.deleteHeartEntry(id);
-//                Toast.makeText(HeartRateUpdate.this, "Deleted the course", Toast.LENGTH_SHORT).show();
-//                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
-//                startActivity(i);
-            }
-        });
+        //calling a method to delete our course.
+        //                dbHandler.deleteHeartEntry(id);
+        //                Toast.makeText(HeartRateUpdate.this, "Deleted the course", Toast.LENGTH_SHORT).show();
+        //                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
+        //                startActivity(i);
+        deleteEntryBtn.setOnClickListener(this::showAlertDialog);
 
     }
 
@@ -178,24 +157,18 @@ public class HeartRateUpdate extends AppCompatActivity {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("DELETE CONFIRMATION");
         alert.setMessage("Are you sure to delete record?");
-        alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                HeartDBHandler dbHandler = new HeartDBHandler(HeartRateUpdate.this);
-                ;
-                String id;
-                id = getIntent().getStringExtra("id");
-                dbHandler.deleteHeartEntry(id);
-                Toast.makeText(HeartRateUpdate.this, "Record Deleted Successfully..", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
-                startActivity(i);
-            }
+        alert.setPositiveButton("Yes", (dialog, which) -> {
+            HeartDBHandler dbHandler = new HeartDBHandler(HeartRateUpdate.this);
+            ;
+            String id;
+            id = getIntent().getStringExtra("id");
+            dbHandler.deleteHeartEntry(id);
+            Toast.makeText(HeartRateUpdate.this, "Record Deleted Successfully..", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
+            startActivity(i);
         });
-        alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
-            }
+        alert.setNegativeButton("No", (dialog, which) -> {
+            Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
         });
 
         AlertDialog alertDialog = alert.create();
