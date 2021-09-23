@@ -45,7 +45,7 @@
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@drawable/heart_report_background"
+            android:background="@drawable/heart_new_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar">
@@ -53,12 +53,10 @@
             <LinearLayout
                 android:id="@+id/linearLayout6"
                 android:layout_width="360dp"
-                android:layout_height="600dp"
+                android:layout_height="400dp"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="#3BE91E63"
                 android:orientation="vertical"
@@ -72,7 +70,8 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/comfortaa_bold"
                     android:gravity="center_horizontal"
                     android:text="@string/heading_heart_add_entry"
@@ -80,21 +79,17 @@
                     android:textColor="@color/heart_landing_headings"
                     android:textSize="30sp" />
 
-                <ImageView
-                    android:id="@+id/imageView2"
+                <pl.droidsonroids.gif.GifImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:layout_marginTop="30dp"
-                    android:contentDescription="heart add entry image"
-                    app:srcCompat="@drawable/heart_img_botnav"
-                    tools:ignore="VectorDrawableCompat" />
+                    android:src="@drawable/heart_add_gif" />
 
                 <EditText
                     android:id="@+id/heart_add_heartrate"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="50dp"
                     android:background="@drawable/heart_input_rounded_corners"
                     android:gravity="center"
@@ -102,7 +97,8 @@
                     android:inputType="number"
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
-                    android:textColorHint="#E91E63" />
+                    android:textColorHint="#E91E63"
+                    tools:ignore="Autofill" />
 
                 <EditText
                     android:id="@+id/heart_add_date"
@@ -118,7 +114,8 @@
                     android:inputType="date"
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
-                    android:textColorHint="#E91E63" />
+                    android:textColorHint="#E91E63"
+                    tools:ignore="Autofill" />
 
 
                 <Button
@@ -130,6 +127,7 @@
                     android:layout_marginRight="90dp"
                     android:clickable="true"
                     android:focusable="false"
+                    android:fontFamily="@font/comfortaa_bold"
                     android:padding="10dp"
                     android:text="@string/heart_entry_btn_record_txt"
                     android:textColor="#FFFFFF"

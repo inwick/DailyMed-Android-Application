@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    android:background="@color/white"
+    app:cardBackgroundColor="@color/transparent"
     android:elevation="8dp"
     app:cardCornerRadius="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#8CFF4D6D"
+        android:background="#5AFF4D6D"
         android:layout_margin="3dp"
         android:orientation="vertical">
 
@@ -39,6 +39,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"
                 android:paddingTop="5dp"
@@ -49,11 +50,11 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="50px"
+                android:layout_width="15dp"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/heart_record_seperator"
-                android:textColor="#3F51B5"
+                android:textColor="@color/heart_landing_boxes"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -62,10 +63,12 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingLeft="15dp"
-                android:text="Heart Rate"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="15dp"
+                android:text="@string/heart_recycler_temp"
                 android:textColor="@color/heart_landing_headings"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="RtlSymmetry" />
 
         </LinearLayout>
 
@@ -82,7 +85,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
-                android:padding="15px"
+                android:padding="15dp"
                 app:srcCompat="@drawable/heart_ic_main_image"
                 tools:ignore="VectorDrawableCompat" />
 
@@ -91,19 +94,21 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:paddingLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="10dp"
                 android:paddingBottom="5dp"
                 android:text="@string/heart_record_date_head"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="50px"
+                android:layout_width="15dp"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/heart_record_seperator"
-                android:textColor="#3F51B5"
+                android:textColor="@color/heart_landing_boxes"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -112,10 +117,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingLeft="15dp"
-                android:text="Date"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="15dp"
+                android:text="@string/heart_date_temp"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="RtlSymmetry" />
 
         </LinearLayout>
 

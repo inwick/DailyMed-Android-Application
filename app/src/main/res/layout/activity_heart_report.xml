@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="@drawable/heart_report_background">
+        android:background="@drawable/heart_new_background">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -41,89 +41,97 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/menu" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="350dp"
-            android:layout_height="170dp"
 
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/heart_report_gif"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="0.384"
-            app:srcCompat="@drawable/img_heart_report_main"
-            tools:ignore="VectorDrawableCompat" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.455" />
 
         <TextView
             android:id="@+id/heart_report_average_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="72"
-            android:textColor="@color/black"
-            android:textSize="30sp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="@string/heart_report_dummy_rate"
+            android:textColor="@color/heart_landing_headings"
+            android:textSize="40sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-            app:layout_constraintEnd_toEndOf="@+id/imageView6"
-            app:layout_constraintStart_toStartOf="@+id/imageView6"
-            app:layout_constraintTop_toTopOf="@+id/imageView6"
-            app:layout_constraintVertical_bias="0.392" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.485" />
 
         <TextView
             android:id="@+id/heart_report_average_result2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BPM"
-            android:textColor="@color/black"
+            android:layout_width="43dp"
+            android:layout_height="27dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/heart_report_bpm_tag"
+            android:textColor="@color/heart_landing_headings"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-            app:layout_constraintEnd_toEndOf="@+id/imageView6"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="@+id/imageView6"
-            app:layout_constraintTop_toTopOf="@+id/imageView6"
-            app:layout_constraintVertical_bias="0.63" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.548" />
 
         <Button
             android:id="@+id/heart_btn_report_tips"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:layout_marginTop="70dp"
-            android:backgroundTint="@color/heart_landing_boxes_middle"
+            android:backgroundTint="@color/heart_landing_new"
+            android:fontFamily="@font/comfortaa_bold"
             android:text="@string/heart_tips_btn_tips_browse"
-            android:textColor="@color/heart_landing_headings"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6"
-            app:layout_constraintVertical_bias="0.324" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.843"
+            tools:targetApi="lollipop" />
 
         <TextView
             android:id="@+id/heart_report_line_01"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/comfortaa_bold"
             android:gravity="center_horizontal"
             android:text="@string/heart_report_heading"
             android:textAlignment="center"
             android:textColor="@color/heart_landing_headings"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.214" />
 
         <TextView
             android:id="@+id/heart_report_line_02"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:fontFamily="@font/comfortaa_bold"
             android:gravity="center_horizontal"
             android:text="@string/heart_report_tips_txt"
             android:textAlignment="center"
-            android:textColor="@color/teal_700"
-            android:textSize="20sp"
+            android:textColor="@color/heart_landing_headings"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.718" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

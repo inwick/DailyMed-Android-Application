@@ -26,7 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="@drawable/heart_report_background">
+        android:background="@drawable/heart_new_land_background">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -36,7 +36,7 @@
             android:background="@color/heart_landing_new"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toTopOf="@+id/idRVCourses"
+            app:layout_constraintBottom_toTopOf="@+id/idRVHeart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -56,7 +56,7 @@
             android:textColor="@color/heart_landing_headings"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/idRVCourses"
+            app:layout_constraintBottom_toTopOf="@+id/idRVHeart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -71,14 +71,14 @@
             android:textColor="#1A841F"
             android:textSize="16sp"
             android:textStyle="italic"
-            app:layout_constraintBottom_toTopOf="@+id/idRVCourses"
+            app:layout_constraintBottom_toTopOf="@+id/idRVHeart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
             app:layout_constraintVertical_bias="0.0" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/idRVCourses"
+            android:id="@+id/idRVHeart"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="5dp"

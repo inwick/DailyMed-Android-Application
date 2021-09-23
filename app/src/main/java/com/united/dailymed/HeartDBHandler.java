@@ -82,24 +82,24 @@ public class HeartDBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         // on below line we are creating a cursor with query to read data from database.
-        Cursor cursorCourses = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+        Cursor cursorHearts = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
 
         // on below line we are creating a new array list.
         ArrayList<HeartRateModel> HeartRateModelArrayList = new ArrayList<>();
 
         // moving our cursor to first position.
-        if (cursorCourses.moveToFirst()) {
+        if (cursorHearts.moveToFirst()) {
             do {
                 // on below line we are adding the data from cursor to our array list.
-                HeartRateModelArrayList.add(new HeartRateModel(cursorCourses.getInt(0),cursorCourses.getString(1),
-                        cursorCourses.getString(2)
+                HeartRateModelArrayList.add(new HeartRateModel(cursorHearts.getInt(0),cursorHearts.getString(1),
+                        cursorHearts.getString(2)
                        ));
-            } while (cursorCourses.moveToNext());
+            } while (cursorHearts.moveToNext());
             // moving our cursor to next.
         }
         // at last closing our cursor
         // and returning our array list.
-        cursorCourses.close();
+        cursorHearts.close();
         return HeartRateModelArrayList;
     }
 
