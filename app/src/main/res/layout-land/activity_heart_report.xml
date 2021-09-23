@@ -66,13 +66,13 @@
                     android:text="@string/heart_report_heading"
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_headings"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.028"
+                    app:layout_constraintVertical_bias="0.064"
                     tools:ignore="MissingConstraints" />
 
                 <pl.droidsonroids.gif.GifImageView
@@ -150,13 +150,15 @@
                     android:fontFamily="@font/comfortaa_bold"
                     android:text="@string/heart_tips_btn_tips_browse"
                     android:textColor="@color/heart_landing_btn_text"
+                    android:textSize="10sp"
                     app:backgroundTint="#3F51B5"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.416"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.642" />
+                    app:layout_constraintVertical_bias="0.642"
+                    tools:ignore="SmallSp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 

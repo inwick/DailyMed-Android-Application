@@ -29,18 +29,6 @@
         android:layout_marginBottom="0dp"
         android:background="#FFFFFF">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/heart_landing_boxes"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/menu" />
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
@@ -49,25 +37,34 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="NotSibling">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/heart_landing_boxes"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu" />
 
             <LinearLayout
                 android:id="@+id/linearLayout5"
                 android:layout_width="360dp"
-                android:layout_height="600dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginBottom="10dp"
+                android:layout_height="550dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="50dp"
                 android:background="@color/heart_landing_boxes_middle"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
 
                 <TextView
@@ -80,13 +77,12 @@
                     android:text="@string/heart_modify_entry"
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_headings"
-                    android:textSize="30sp" />
+                    android:textSize="24sp" />
 
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:src="@drawable/heart_add_gif"
-                    />
+                    android:src="@drawable/heart_add_gif" />
 
 
                 <TextView
@@ -113,7 +109,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
                     android:textColorHint="#ff8fa3"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     tools:ignore="Deprecated,TextViewEdits" />
 
                 <TextView
@@ -139,6 +135,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
                     android:textColorHint="#ff8fa3"
+                    android:textSize="14sp"
                     tools:ignore="Autofill" />
 
                 <TextView
@@ -165,6 +162,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
                     android:textColorHint="#ff8fa3"
+                    android:textSize="14sp"
                     tools:ignore="Autofill" />
 
 
@@ -176,12 +174,14 @@
                     android:layout_marginTop="25dp"
                     android:layout_marginRight="90dp"
                     android:clickable="true"
+                    android:focusable="false"
                     android:fontFamily="@font/comfortaa_bold"
                     android:padding="10dp"
                     android:text="@string/heart_rate_modify_btn_update"
                     android:textColor="@color/heart_landing_btn_text"
+                    android:textSize="10sp"
                     app:backgroundTint="@color/heart_landing_boxes"
-                    android:focusable="false" />
+                    tools:ignore="SmallSp" />
 
                 <Button
                     android:id="@+id/idBtnDelete"
@@ -191,12 +191,14 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginRight="90dp"
                     android:clickable="true"
+                    android:focusable="false"
                     android:fontFamily="@font/comfortaa_bold"
                     android:padding="10dp"
                     android:text="@string/heart_add_entry_btn_delete"
                     android:textColor="@color/heart_landing_btn_text"
+                    android:textSize="10sp"
                     app:backgroundTint="@color/heart_landing_boxes"
-                    android:focusable="false" />
+                    tools:ignore="SmallSp" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 

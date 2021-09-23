@@ -29,18 +29,6 @@
         android:layout_marginBottom="0dp"
         android:background="#FFFFFF">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/heart_landing_boxes"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/menu" />
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
@@ -49,14 +37,34 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="NotSibling">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/heart_landing_boxes"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/linearLayout9"
+                android:layout_width="786dp"
+                android:layout_height="258dp"
                 android:layout_margin="10dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="13dp"
+                android:baselineAligned="false"
                 android:orientation="horizontal"
-                android:baselineAligned="false">
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -68,19 +76,18 @@
                         android:id="@+id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="15dp"
                         android:fontFamily="@font/comfortaa_bold"
                         android:gravity="center_horizontal"
                         android:text="@string/heart_modify_entry"
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_headings"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
 
                     <pl.droidsonroids.gif.GifImageView
                         android:layout_width="match_parent"
-                        android:layout_height="220dp"
-                        android:src="@drawable/heart_add_gif"
-                        />
+                        android:layout_height="160dp"
+                        android:src="@drawable/heart_add_gif" />
 
 
                 </LinearLayout>
@@ -98,7 +105,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center_horizontal"
                         android:text="@string/heart_record_id"
                         android:textAlignment="center"
@@ -119,14 +126,14 @@
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_boxes"
                         android:textColorHint="#ff8fa3"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         tools:ignore="Deprecated,TextViewEdits" />
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="2dp"
                         android:gravity="center_horizontal"
                         android:text="@string/heart_rate_modify_entry_heartrate"
                         android:textAlignment="center"
@@ -146,13 +153,14 @@
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_boxes"
                         android:textColorHint="#ff8fa3"
+                        android:textSize="14sp"
                         tools:ignore="Autofill" />
 
                     <TextView
                         android:id="@+id/textView9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="2dp"
                         android:gravity="center_horizontal"
                         android:text="@string/heart_add_entry_date_head"
                         android:textAlignment="center"
@@ -173,40 +181,48 @@
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_boxes"
                         android:textColorHint="#ff8fa3"
+                        android:textSize="14sp"
                         tools:ignore="Autofill" />
 
-                    <Button
-                        android:id="@+id/idBtnUpdateCourse"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="90dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="90dp"
-                        android:clickable="true"
-                        android:focusable="false"
-                        android:fontFamily="@font/comfortaa_bold"
-                        android:gravity="center"
-                        android:text="@string/heart_rate_modify_btn_update"
-                        android:textColor="@color/heart_landing_btn_text"
-                        android:textSize="12sp"
-                        app:backgroundTint="@color/heart_landing_boxes" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/idBtnDelete"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="90dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginRight="90dp"
-                        android:layout_marginBottom="5dp"
-                        android:clickable="true"
-                        android:focusable="false"
-                        android:fontFamily="@font/comfortaa_bold"
-                        android:gravity="center"
-                        android:text="@string/heart_add_entry_btn_delete"
-                        android:textColor="@color/heart_landing_btn_text"
-                        android:textSize="12sp"
-                        app:backgroundTint="@color/heart_landing_boxes" />
+                        <Button
+                            android:id="@+id/idBtnUpdateCourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:gravity="center"
+                            android:text="@string/heart_rate_modify_btn_update"
+                            android:textColor="@color/heart_landing_btn_text"
+                            android:textSize="10sp"
+                            app:backgroundTint="@color/heart_landing_boxes" />
+
+                        <Button
+                            android:id="@+id/idBtnDelete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:gravity="center"
+                            android:text="@string/heart_add_entry_btn_delete"
+                            android:textColor="@color/heart_landing_btn_text"
+                            android:textSize="10sp"
+                            app:backgroundTint="@color/heart_landing_boxes" />
+                    </LinearLayout>
 
 
                 </LinearLayout>
