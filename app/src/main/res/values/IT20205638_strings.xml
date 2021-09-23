@@ -40,4 +40,6 @@
     <string name="heart_date_temp">Date</string>
     <string name="heart_report_temp_rate">72</string>
     <string name="heart_report_temp_bpm">BPM</string>
+    <string name="heart_record_id">RECORD ID</string>
+    <string name="heart_add_entry_date_head">Date</string>
 </resources>
