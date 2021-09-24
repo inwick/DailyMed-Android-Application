@@ -6,6 +6,14 @@
     <color name="settings">#3A86FF</color>
     <color name="welcomecolor">#6200EE</color>
     <color name="waterbackgroundcolor">#E8FBFF</color>
+    <color name="waterbackground">#000E8F</color>
+    <color name="waterback">#E8FBFF</color>
+    <color name="waterbtn">#2196F3</color>
+    <color name="welcomeclr">#3700B3</color>
+    <color name="txtblack">#000000</color>
+    <color name="Settingscolor">#3A86FF</color>
+
+    <color name="waternavigation">#3F37C9</color>
 </resources>
 
 
