@@ -92,7 +92,7 @@
             android:fontFamily="@font/comfortaa_bold"
             android:text="@string/heart_tips_btn_tips_browse"
             android:textColor="@color/white"
-            android:textSize="10sp"
+            android:textSize="@dimen/heart_button_form_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

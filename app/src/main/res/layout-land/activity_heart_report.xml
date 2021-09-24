@@ -153,7 +153,7 @@
                     android:fontFamily="@font/comfortaa_bold"
                     android:text="@string/heart_tips_btn_tips_browse"
                     android:textColor="@color/heart_landing_btn_text"
-                    android:textSize="10sp"
+                    android:textSize="@dimen/heart_button_form_size"
                     app:backgroundTint="#3F51B5"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

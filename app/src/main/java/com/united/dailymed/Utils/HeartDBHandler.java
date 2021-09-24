@@ -1,9 +1,11 @@
-package com.united.dailymed;
+package com.united.dailymed.Utils;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.united.dailymed.Model.HeartRateModel;
 
 import java.util.ArrayList;
 
