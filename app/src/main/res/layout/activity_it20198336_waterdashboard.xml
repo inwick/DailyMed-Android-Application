@@ -84,25 +84,25 @@
 
         <ImageView
             android:id="@+id/iv_progress_centre"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="123dp"
+            android:layout_height="119dp"
             android:layout_gravity="center"
             android:padding="8dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/ic_progress_centre_happy"
-            tools:src="@drawable/ic_man_colored"
-            tools:ignore="VectorDrawableCompat" />
+            app:srcCompat="@drawable/ic_logo"
+            tools:ignore="VectorDrawableCompat"
+            tools:src="@drawable/ic_man_colored" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal"
+            android:duration="100"
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="360"></LinearLayout>
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
 
     </FrameLayout>
 
@@ -133,7 +133,9 @@
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569" />
+        app:layout_constraintVertical_bias="0.569"
+        app:textLocale="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/totalAmt"
@@ -146,7 +148,9 @@
         app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintVertical_bias="0.572"
+        app:textLocale="center"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -171,10 +175,11 @@
         android:layout_marginStart="20dp"
 
         android:layout_marginLeft="20dp"
+        android:onClick="addDrink"
         android:text="@string/btnAddDrink"
+
+
         app:backgroundTint="@color/waterbutton"
-
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.856"
@@ -190,10 +195,11 @@
         android:layout_marginEnd="20dp"
 
         android:layout_marginRight="20dp"
+        android:onClick="goSettings"
         android:text="@string/btnChangeSettings"
+
+
         app:backgroundTint="@color/waterbutton"
-
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
@@ -211,9 +217,10 @@
         app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992"
+        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/menu_navigation" />
 
     <TextView
@@ -239,7 +246,8 @@
         app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.723"
+        android:gravity="center"/>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -253,8 +261,10 @@
         android:background="@color/navbarcolor"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="3dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-6dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

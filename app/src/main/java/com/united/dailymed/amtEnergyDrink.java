@@ -56,6 +56,72 @@ public class amtEnergyDrink extends AppCompatActivity {
 
 
 
+
+
+
+    /********************************************* UPDATING AMOUNT WHEN A NEW AMOUNT IS ADDED ********************************************************/
+    public void updateAmount(View view){
+        WaterDBHandler waterdbhandler=new WaterDBHandler(this);
+
+        Double drankAlready = waterdbhandler.getDrank();
+        // Double totDrank = (Double.parseDouble(txtCoffee.getText().toString())*0.8)+drankAlready;
+
+        Double amt = Double.parseDouble(txtEnergyDrink.getText().toString());
+
+        Double totDrank = calcDrank(drankAlready,amt);
+
+        Double remainingAlready = waterdbhandler.getRemainingAmt();
+        Double totRemaining = calRemaining(remainingAlready,amt);
+        // Double totRemaining = remainingAlready - (Double.parseDouble(txtCoffee.getText().toString())*0.8);
+
+
+        int val=waterdbhandler.updateInfo(totDrank,totRemaining);
+
+        if(val>0)
+        {
+
+            //Creating the LayoutInflater instance
+//            LayoutInflater li = getLayoutInflater();
+
+            //Getting the View object as defined in the custom toast.xml file
+            //View layout = li.inflate(R.layout.custom_toast_coffee,(ViewGroup) findViewById(R.id.custom_toast_coffee));
+
+            //Creating the Toast object
+//            Toast toast = new Toast(getApplicationContext());
+//            toast.setDuration(Toast.LENGTH_SHORT);
+//            toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
+//            toast.setView(layout);
+//            toast.show();
+
+            Intent i = new Intent(amtEnergyDrink.this,Waterdashboard.class);
+            startActivity(i);
+
+        }
+        else
+        {
+            Toast.makeText(this,"Could Not update! ",Toast.LENGTH_SHORT).show();
+        }
+    }//end of method
+
+    /******************************************** CALCULATING THE DRANK AMOUNT *******************************************************************/
+    public Double calcDrank(Double drankAlready,Double amountNow){
+        return (drankAlready+(amountNow));
+    }
+
+    /******************************************** CALCULATING THE REMAINING AMOUNT *******************************************************************/
+    public Double calRemaining(Double remain, Double amt) {
+        return(remain - (amt));
+    }
+
+
+
+
+
+
+
+
+
+
     /********************************************* ON CLICK METHOD WHEN CANCELLED ADDITION OF DRINK ********************************************************/
     public void cancelEnergyDrink(View v){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

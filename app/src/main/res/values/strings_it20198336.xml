@@ -48,9 +48,7 @@
     <string name="tvcupselect">Select a drink</string>
     <string name="cancelCoffee">cancelCoffee</string>
     <string name="WineDone">done</string>
-
     <string name="EnergyDrinkDone">Done</string>
-
     <string name="ColaDone">Done</string>
     <string name="EnergyDone">Done</string>
     <string name="JuiceDone">Done</string>
@@ -59,7 +57,9 @@
     <string name="CoffeeDone">Done</string>
     <string name="Winedone">Done</string>
     <string name="tvWelcome">Welcome</string>
-
+    <string name="btnGo">let\'s go</string>
+    <string name="btnletsgo">LET\'S GO</string>
+    <string name="Watertarget">The recommended daily intake is:3.7 liters of fluids a day for men.About 2.7 liters of fluids a day for women.</string>
 
 
 </resources>
