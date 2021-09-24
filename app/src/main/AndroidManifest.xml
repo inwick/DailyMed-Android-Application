@@ -10,6 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DAILYMED">
+
+
+        <activity android:name=".SplashScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         <activity android:name=".waterDetails"> </activity>
         <activity android:name="changeTotal" ></activity>
         <activity android:name=".Selectwateramount"></activity>
@@ -34,6 +43,28 @@
 
 
         </activity>
+        <activity android:name=".HeartRateUpdate" />
+        <activity android:name=".HeartReport" />
+        <activity android:name=".HeartTips" />
+        <activity android:name=".HeartHistory" />
+        <activity android:name=".HeartAddEntry" />
+        <activity android:name=".Createnewcup"/>
+        <activity android:name=".waterDetails" />
+        <activity android:name=".Selectwateramount" />
+        <activity android:name=".Changewatersettings"/>
+        <activity android:name=".Waterdashboard"/>
+        <activity android:name=".amtCoffee"/>
+        <activity android:name=".amtWater"/>
+        <activity android:name=".amtJuice"/>
+        <activity android:name=".amtTea"/>
+        <activity android:name=".amtCola"/>
+        <activity android:name=".amtEnergyDrink"/>
+        <activity android:name=".Fitness" />
+        <activity android:name=".Pill" />
+        <activity android:name=".Water" />
+        <activity android:name=".Heart" />
+        <activity android:name=".Home"/>
+
 
         <meta-data
             android:name="preloaded_fonts"
