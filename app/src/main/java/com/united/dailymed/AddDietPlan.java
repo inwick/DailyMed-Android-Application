@@ -3,8 +3,10 @@ package com.united.dailymed;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,20 +21,24 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class HeartAddEntry extends AppCompatActivity {
-
+public class AddDietPlan extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_heart_add_entry);
+        setContentView(R.layout.activity_add_diet_plan);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
 
 
         final Calendar myCalendar = Calendar.getInstance();
 
-        EditText edittext = (EditText) findViewById(R.id.heart_add_date);
+        EditText edittext = (EditText) findViewById(R.id.diet_add_date);
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+
+
 
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear,
@@ -57,49 +63,56 @@ public class HeartAddEntry extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                new DatePickerDialog(HeartAddEntry.this, date, myCalendar
+                new DatePickerDialog(AddDietPlan.this, date, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
 
 
-        EditText HeartRateEntry = findViewById(R.id.heart_add_heartrate);
-        Button addHeartEntry = findViewById(R.id.btn_add_heart_entry);
-        HeartDBHandler dbHandler = new HeartDBHandler(HeartAddEntry.this);
-
+        EditText Breakfast = findViewById(R.id.diet_add_breakfast);
+        EditText Lunch = findViewById(R.id.diet_add_lunch);
+        EditText Dinner = findViewById(R.id.diet_add_dinner);
+        Button addHeartEntry = findViewById(R.id.diet_btn_add_diet_plan);
+        DietDBHandler dbHandler = new DietDBHandler(AddDietPlan.this);
 
         addHeartEntry.setOnClickListener(v -> {
 
+
             // below line is to get data from all edit text fields.
-            String hRate = HeartRateEntry.getText().toString();
             String entryDate = edittext.getText().toString();
+            String breakfast = Breakfast.getText().toString();
+            String lunch = Lunch.getText().toString();
+            String dinner = Dinner.getText().toString();
 
 
             // validating if the text fields are empty or not.
-            if (hRate.isEmpty() || entryDate.isEmpty()) {
-                Toast.makeText(HeartAddEntry.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
+            if (entryDate.isEmpty() || breakfast.isEmpty() || lunch.isEmpty() || dinner.isEmpty()) {
+                Toast.makeText(AddDietPlan.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
                 return;
             }
 
             // on below line we are calling a method to add new
             // course to sqlite data and pass all our values to it.
-            dbHandler.addNewHeartEntry(hRate, entryDate);
+            dbHandler.addDietPlan(entryDate, breakfast,lunch,dinner);
 
             // after adding the data we are displaying a toast message.
-            Toast.makeText(HeartAddEntry.this, "Heart-Rate Saved.", Toast.LENGTH_SHORT).show();
-            HeartRateEntry.setText("");
+            Toast.makeText(AddDietPlan.this, "Heart-Rate Saved.", Toast.LENGTH_SHORT).show();
+            Breakfast.setText("");
+            Lunch.setText("");
+            Dinner.setText("");
             edittext.setText("");
-            Intent i = new Intent(HeartAddEntry.this, HeartHistory.class);
+            Intent i = new Intent(AddDietPlan.this, AddDietPlan.class);
             startActivity(i);
         });
 
 
         //Set Heart Selected
-        bottomNavigationView.setSelectedItemId(R.id.Water);
+        bottomNavigationView.setSelectedItemId(R.id.Heart);
 
         //Perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
@@ -129,9 +142,5 @@ public class HeartAddEntry extends AppCompatActivity {
             }
 
         });
-
-
     }
-
 }
-
