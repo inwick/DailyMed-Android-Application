@@ -14,7 +14,7 @@ import java.util.List;
 public class DatabaseHandler extends SQLiteOpenHelper {
     private static final int VERSION = 1;
     //Database Name
-    private static final String NAME = "dailymed";
+    private static final String NAME = "dailymed_pills";
     //Table Name
     private static final String PILLS_TABLE = "pills";
     private static final String ID = "id";

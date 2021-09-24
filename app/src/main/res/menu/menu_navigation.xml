@@ -12,8 +12,6 @@
         android:title="@string/heading_heart" />
 
     <item
-
-    <item
         android:id="@+id/home"
         android:icon="@drawable/icon_home_botnav"
         android:title="@string/heading_home" />
