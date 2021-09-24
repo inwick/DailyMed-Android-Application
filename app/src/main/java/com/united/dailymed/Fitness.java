@@ -9,16 +9,27 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MenuItem;
+
 import android.view.MotionEvent;
+
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Fitness extends AppCompatActivity {
 
+
     private static final int SWIPE_MIN_DISTANCE = 120;
     private static final int SWIPE_MAX_OFF_PATH = 250;
     private static final int SWIPE_THRESHOLD_VELOCITY = 200;
     private GestureDetector gestureDetector;
+
+
+    Button btnaddDetails;
+    Button  btnviewDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +38,33 @@ public class Fitness extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fitness);
+
+
+
+            btnaddDetails = findViewById(R.id.adddietbutton);
+
+            btnaddDetails.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(Fitness.this,AddDietPlan.class);
+                    Toast.makeText(getApplicationContext(), "Changes Applied", Toast.LENGTH_SHORT).show();
+                    startActivity(i);
+                }
+            });
+
+
+        btnviewDetails = findViewById(R.id.viewdietplan);
+
+        btnviewDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Fitness.this,DietPlan.class);
+                Toast.makeText(getApplicationContext(), "Changes Applied", Toast.LENGTH_SHORT).show();
+                startActivity(i);
+            }
+        });
+
+
 
         //Initialize And Assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -64,6 +102,7 @@ public class Fitness extends AppCompatActivity {
 
         });
     }
+
     public class SwipeDetector extends GestureDetector.SimpleOnGestureListener
     {
         @Override
@@ -129,3 +168,8 @@ public class Fitness extends AppCompatActivity {
 
 
 }
+
+}
+
+
+
