@@ -189,11 +189,9 @@
 
     <Button
         android:id="@+id/btnchangeSettings"
-
         android:layout_width="148dp"
         android:layout_height="56dp"
         android:layout_marginEnd="20dp"
-
         android:layout_marginRight="20dp"
         android:onClick="goSettings"
         android:text="@string/btnChangeSettings"

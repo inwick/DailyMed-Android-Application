@@ -109,7 +109,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
                     android:textColorHint="#ff8fa3"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/heart_form_hint_size"
                     tools:ignore="Deprecated,TextViewEdits" />
 
                 <TextView
@@ -135,7 +135,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
                     android:textColorHint="#ff8fa3"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/heart_form_hint_size"
                     tools:ignore="Autofill" />
 
                 <TextView
@@ -162,7 +162,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/heart_landing_boxes"
                     android:textColorHint="#ff8fa3"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/heart_form_hint_size"
                     tools:ignore="Autofill" />
 
 
@@ -179,7 +179,7 @@
                     android:padding="10dp"
                     android:text="@string/heart_rate_modify_btn_update"
                     android:textColor="@color/heart_landing_btn_text"
-                    android:textSize="10sp"
+                    android:textSize="@dimen/heart_button_form_size"
                     app:backgroundTint="@color/heart_landing_boxes"
                     tools:ignore="SmallSp" />
 
@@ -196,7 +196,7 @@
                     android:padding="10dp"
                     android:text="@string/heart_add_entry_btn_delete"
                     android:textColor="@color/heart_landing_btn_text"
-                    android:textSize="10sp"
+                    android:textSize="@dimen/heart_button_form_size"
                     app:backgroundTint="@color/heart_landing_boxes"
                     tools:ignore="SmallSp" />
             </LinearLayout>

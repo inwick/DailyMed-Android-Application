@@ -1,4 +1,4 @@
-package com.united.dailymed;
+package com.united.dailymed.Heart;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,13 +14,18 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.united.dailymed.Fitness;
+import com.united.dailymed.Home;
+import com.united.dailymed.Pill;
+import com.united.dailymed.R;
+import com.united.dailymed.Utils.HeartDBHandler;
+import com.united.dailymed.Water;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
 public class HeartAddEntry extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +56,6 @@ public class HeartAddEntry extends AppCompatActivity {
             }
 
         };
-
 
         edittext.setOnClickListener(new View.OnClickListener() {
 
@@ -96,7 +100,7 @@ public class HeartAddEntry extends AppCompatActivity {
 
 
         //Set Heart Selected
-        bottomNavigationView.setSelectedItemId(R.id.Water);
+        bottomNavigationView.setSelectedItemId(R.id.Heart);
 
         //Perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

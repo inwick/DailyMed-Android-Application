@@ -51,7 +51,7 @@
             android:fontFamily="@font/carter_one_regular"
             android:text="@string/landing_heading"
             android:textColor="@color/heart_landing_headings"
-            android:textSize="30sp"
+            android:textSize="26sp"
             android:textStyle="bold"
             app:fontFamily="@font/carter_one_regular"
             app:layout_constraintEnd_toStartOf="@+id/LogoId"
@@ -144,7 +144,7 @@
                     android:fontFamily="sans-serif-thin"
                     android:text="@string/landing_addentry"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/heart_button_size"
                     android:textStyle="bold" />
 
 
@@ -181,7 +181,7 @@
                     android:fontFamily="sans-serif-thin"
                     android:text="@string/landing_edit"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/heart_button_size"
                     android:textStyle="bold" />
 
 
@@ -216,7 +216,7 @@
                     android:fontFamily="sans-serif-thin"
                     android:text="@string/landing_tips"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/heart_button_size"
                     android:textStyle="bold" />
 
 
@@ -250,7 +250,7 @@
                     android:fontFamily="sans-serif-thin"
                     android:text="@string/landing_summary"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/heart_button_size"
                     android:textStyle="bold" />
 
 

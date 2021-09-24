@@ -53,16 +53,16 @@
         <activity android:name=".amtEnergyDrink"> </activity>
         <activity android:name=".Pill" />
         <activity android:name=".Water" />
-        <activity android:name=".Heart" />
+        <activity android:name=".Heart.Heart" />
         <activity android:name=".Home">
 
 
         </activity>
-        <activity android:name=".HeartRateUpdate" />
-        <activity android:name=".HeartReport" />
-        <activity android:name=".HeartTips" />
-        <activity android:name=".HeartHistory" />
-        <activity android:name=".HeartAddEntry" />
+        <activity android:name=".Heart.HeartRateUpdate" />
+        <activity android:name=".Heart.HeartReport" />
+        <activity android:name=".Heart.HeartTips" />
+        <activity android:name=".Heart.HeartHistory" />
+        <activity android:name=".Heart.HeartAddEntry" />
 
 
 

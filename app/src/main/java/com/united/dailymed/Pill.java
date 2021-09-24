@@ -14,24 +14,17 @@ import android.view.GestureDetector;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 
-import android.view.Gravity;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.CheckBox;
-import android.widget.Toast;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.united.dailymed.Adapter.PillAdapter;
+import com.united.dailymed.Heart.Heart;
 import com.united.dailymed.Model.PillModel;
 import com.united.dailymed.Utils.DatabaseHandler;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -50,7 +43,7 @@ public class Pill extends AppCompatActivity implements DialogCloseListener{
 
     private static final int SWIPE_MIN_DISTANCE = 120;
     private static final int SWIPE_MAX_OFF_PATH = 250;
-    private static final int SWIPE_THRESHOLD_VELOCITY = 200;
+    private static final int SWIPE_THRESHOLD_VELOCITY = 15000;
     private GestureDetector gestureDetector;
 
     @Override
@@ -73,7 +66,7 @@ public class Pill extends AppCompatActivity implements DialogCloseListener{
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch(menuItem.getItemId()) {
                     case R.id.Heart:
-                        startActivity(new Intent(getApplicationContext(),Heart.class));
+                        startActivity(new Intent(getApplicationContext(), Heart.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.home:

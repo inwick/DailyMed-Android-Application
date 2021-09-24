@@ -14,7 +14,7 @@
     android:paddingTop="0dp"
     android:paddingEnd="0dp"
     android:paddingRight="0dp"
-   android:paddingBottom="0dp">
+    android:paddingBottom="0dp">
 
 
     <LinearLayout
@@ -81,7 +81,7 @@
                 android:layout_marginBottom="684dp"
                 android:layout_weight="1"
                 android:background="#00FFFFFF" />
-<!--                app:srcCompat="@drawable/ic_backbtn"-->
+            <!--                app:srcCompat="@drawable/ic_backbtn"-->
 
 
             <ImageButton
@@ -102,7 +102,7 @@
                 android:layout_marginBottom="685dp"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"  />
-<!--                app:srcCompat="@drawable/ic_menu"-->
+            <!--                app:srcCompat="@drawable/ic_menu"-->
 
 
 

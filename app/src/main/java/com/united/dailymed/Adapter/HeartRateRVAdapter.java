@@ -1,4 +1,4 @@
-package com.united.dailymed;
+package com.united.dailymed.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.united.dailymed.Heart.HeartRateUpdate;
+import com.united.dailymed.Model.HeartRateModel;
+import com.united.dailymed.R;
 
 import java.util.ArrayList;
 

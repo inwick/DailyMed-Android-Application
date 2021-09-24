@@ -1,4 +1,4 @@
-package com.united.dailymed;
+package com.united.dailymed.Model;
 
 public class HeartRateModel{
 
