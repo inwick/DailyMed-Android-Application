@@ -11,7 +11,7 @@ public class DietDBHandler extends SQLiteOpenHelper {
 
     // creating a constant variables for our database.
     // below variable is for our database name.
-    private static final String DB_NAME = "dailymed";
+    private static final String DB_NAME = "dailymed_diet";
 
     // below int is our database version
     private static final int DB_VERSION = 1;
