@@ -162,18 +162,34 @@
         android:text="In order to provide tailored hydration advice,I could to get some basic information.And I'll keep this a secret." />
 
     <Button
-        android:id="@+id/btngo"
-        android:layout_width="165dp"
+        android:id="@+id/btngodashboard"
+        android:layout_width="166dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginBottom="136dp"
-        android:text="Let's go"
-        android:textSize="20sp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginBottom="118dp"
+        android:text="Water Dashboard"
+        android:textSize="14sp"
+        app:backgroundTint="@color/waterbtn"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="166dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginBottom="115dp"
+        android:text="start new"
+        android:textSize="14sp"
         app:backgroundTint="@color/waterbtn"
         app:cornerRadius="20dp" />
 

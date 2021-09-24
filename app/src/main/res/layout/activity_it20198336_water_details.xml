@@ -206,6 +206,7 @@
                 android:layout_height="54dp"
                 android:layout_weight="1"
                 android:text="Female"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -216,6 +217,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_weight="1"
                 android:text="Male"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent" />
         </RadioGroup>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -247,7 +249,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="number"
+                android:textColor="@color/black" />
         </LinearLayout>
 
 
@@ -285,7 +288,8 @@
                 android:padding="2dp"
 
                 android:text="lots of activities"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/dif_rb_some"
@@ -298,7 +302,8 @@
                 android:padding="2dp"
 
                 android:text="Some activities"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/dif_rb_few"
@@ -311,7 +316,8 @@
                 android:padding="2dp"
 
                 android:text="very few activities"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/dif_rb_none"
@@ -324,7 +330,8 @@
                 android:padding="2dp"
 
                 android:text="no activities"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
 
         </RadioGroup>
 

@@ -20,7 +20,7 @@ import com.united.dailymed.Heart.Heart;
 
 public class Water extends AppCompatActivity {
     Button btnGo;
-
+    Button btnGoDashboard;
     private static final int SWIPE_MIN_DISTANCE = 120;
     private static final int SWIPE_MAX_OFF_PATH = 250;
     private static final int SWIPE_THRESHOLD_VELOCITY = 200;
@@ -35,7 +35,7 @@ public class Water extends AppCompatActivity {
         setContentView(R.layout.activity_water);
 
         btnGo= findViewById(R.id.btngo);
-
+        btnGoDashboard=findViewById(R.id.btngodashboard);
 
         btnGo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +46,14 @@ public class Water extends AppCompatActivity {
             }
         });
 
+        btnGoDashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Water.this,Waterdashboard.class);
+                Toast.makeText(getApplicationContext(), "Welcome!Let's get started", Toast.LENGTH_SHORT).show();
+                startActivity(i);
+            }
+        });
 
         //Initialize And Assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);

@@ -20,7 +20,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992"
         app:menu="@menu/menu_navigation"
-        tools:layout_editor_absoluteX="126dp" />
+        tools:layout_editor_absoluteX="126dp"
+        android:background="@color/waterback"/>
 
     <LinearLayout
         android:id="@+id/linearLayout3"

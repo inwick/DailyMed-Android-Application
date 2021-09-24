@@ -5,8 +5,11 @@ package com.united.dailymed;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -118,21 +121,22 @@ public class amtJuice extends AppCompatActivity {
         if(val>0)
         {
 
-            //Creating the LayoutInflater instance
+//            //Creating the LayoutInflater instance
 //            LayoutInflater li = getLayoutInflater();
-
-            //Getting the View object as defined in the custom toast.xml file
-            //View layout = li.inflate(R.layout.custom_toast_coffee,(ViewGroup) findViewById(R.id.custom_toast_coffee));
-
-            //Creating the Toast object
+//
+//            //Getting the View object as defined in the custom toast.xml file
+//            View layout = li.inflate(R.layout.activity_it20198336_custom_toast_juice,(ViewGroup) findViewById(R.id.custom_toast_juice));
+//
+//            //Creating the Toast object
 //            Toast toast = new Toast(getApplicationContext());
 //            toast.setDuration(Toast.LENGTH_SHORT);
 //            toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
 //            toast.setView(layout);
 //            toast.show();
-
-            Intent i = new Intent(amtJuice.this,Waterdashboard.class);
-            startActivity(i);
+//
+//            Intent i = new Intent(amtJuice.this,Waterdashboard.class);
+//
+//            startActivity(i);
 
         }
         else
