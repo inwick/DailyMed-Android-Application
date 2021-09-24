@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/quicksand_bold"
             android:gravity="center_horizontal"
-            android:text="diet_rate_history"
+            android:text="DIET PLANS"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30sp"
