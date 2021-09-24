@@ -6,6 +6,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="waterbackground">#000E8F</color>
     <color name="waterback">#E8FBFF</color>
     <color name="waterbtn">#2196F3</color>
@@ -16,3 +17,5 @@
 
 
 </resources>
+
+
