@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Dphederid">DIET PLANNER</string>
+    <string name="editdietbut">EDIT DIET PLAN</string>
+    <string name="viewdietplanbuton">VIEW DIET PLAN</string>
+    <string name="dietheder">DIET PLANNER</string>
+    <string name="adddietbutton">ADD DIET PLAN</string>
+    <string name="add_dropdownsunday">Sunday</string>
+    <string name="formhint">Food name</string>
+    <string name="formday">DAY</string>
+    <string name="add_breakfast">Breakfast</string>
+    <string name="add_lunch">Lunch</string>
+    <string name="add_dinner">Dinner</string>
+    <string name="diet_plan_hedder">DIET PLAN</string>
+    <string name="delete_dietplan_button">DELETE DIET PLAN</string>
+    <string name="select_diet_plan_dropdown">Sunday</string>
+    <string name="view_diet_breakfast">Breakfast</string>
+    <string name="view_diet_lunch">Lunch</string>
+    <string name="view_diet_dinner">Dinner</string>
+    <string name="view_breakfast_food">Bread    Baken       One egg</string>
+    <string name="view_lunch_food">Bread   Baken     one egg</string>
+    <string name="view_dinner_food">Bread   Baken     one egg</string>
+    <string name="edit_diet_plan_heding">EDIT DIET PLAN</string>
+    <string name="edit_diet_breakfast">Breakfast</string>
+    <string name="edit_diet_lunch">Lunch</string>
+    <string name="edit_diet_dinner">Dinner</string>
+    <string name="update_button">UPDATE</string>
+    <string name="edit_diet_selectday_drop">Sunday</string>
+    <string name="edit_diet_bfood">Rice and curry</string>
+    <string name="edit_diet_day">DAY</string>
+    <string name="edit_diet_dinfood">Bread</string>
+</resources>
