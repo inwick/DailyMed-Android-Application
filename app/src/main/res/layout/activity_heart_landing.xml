@@ -51,7 +51,7 @@
             android:fontFamily="@font/carter_one_regular"
             android:text="@string/landing_heading"
             android:textColor="@color/heart_landing_headings"
-            android:textSize="30sp"
+            android:textSize="26sp"
             android:textStyle="bold"
             app:fontFamily="@font/carter_one_regular"
             app:layout_constraintEnd_toStartOf="@+id/LogoId"
