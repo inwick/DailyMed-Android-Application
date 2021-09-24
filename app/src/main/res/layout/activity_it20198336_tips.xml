@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:animationCache="true"
+    android:background="@color/waterback"
+    android:fillViewport="true"
+    android:paddingStart="16dp"
+
+    android:paddingTop="20dp"
+    android:paddingEnd="16dp"
+
+    tools:ignore="HardcodedText">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginTop="0dp"-->
+    <!--        android:animationCache="true"-->
+    <!--        android:orientation="vertical">-->
+    <!--        -->
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_marginStart="0dp"-->
+    <!--        android:layout_marginLeft="0dp"-->
+    <!--        android:layout_marginTop="0dp"-->
+    <!--        android:layout_marginEnd="-2dp"-->
+    <!--        android:layout_marginRight="-2dp"-->
+    <!--        android:background="@color/navbarcolor"-->
+    <!--        android:minHeight="?attr/actionBarSize"-->
+    <!--        android:theme="?attr/actionBarTheme" />-->
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/backbtnId"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="9dp"-->
+    <!--        android:layout_marginLeft="9dp"-->
+    <!--        android:layout_marginTop="9dp"-->
+    <!--        android:layout_marginEnd="340dp"-->
+    <!--        android:layout_marginRight="340dp"-->
+    <!--        android:layout_marginBottom="684dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="#00FFFFFF" />-->
+    <!--    &lt;!&ndash;                app:srcCompat="@drawable/ic_backbtn"&ndash;&gt;-->
+
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/menuBtnId"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="355dp"-->
+    <!--        android:layout_marginLeft="355dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="18dp"-->
+    <!--        android:layout_marginRight="18dp"-->
+    <!--        android:layout_marginBottom="685dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="#00FFFFFF"  />-->
+    <!--    &lt;!&ndash;                app:srcCompat="@drawable/ic_menu"&ndash;&gt;-->
+
+    <!--    </LinearLayout>-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:animationCache="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="how to drink water correctly?"
+            android:textColor="#00000B"
+            android:textColorHint="#00000B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_layout_about"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/water_botnav"
+
+                    app:srcCompat="@drawable/icon_water_botnav"
+                    tools:ignore="ContentDescription,VectorDrawableCompat"
+                    tools:srcCompat="@drawable/water_botnav" />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Drink your glass of water slowly with some small tips"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_layout_gender"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+
+
+                    app:srcCompat="@drawable/water3"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Hold the water  in your mouth for a while before swallowing"
+                        android:textColor="@color/black"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_layout_weight"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+
+
+                    app:srcCompat="@drawable/water7"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Drinking water in a sitting posture is better than in a standing or running position"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_layout_activity"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+
+
+                    app:srcCompat="@drawable/water4"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Drink plenty of fluids and eat high water foods"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_layout_intake"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/water8"
+                    android:backgroundTint="#E8FBFF"
+
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+
+
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Limit time spent in the sun"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_ll_imperial_metrics"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+
+                android:orientation="horizontal"
+
+
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+
+                    android:padding="12dp"
+                    android:scaleType="fitXY"
+
+
+                    app:srcCompat="@drawable/fitnessimg"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Cut back on outdoor activities or sports"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_layout_daily_notif"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+
+                android:orientation="horizontal"
+
+
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+
+
+                    app:srcCompat="@drawable/fitness"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="If your're exercising outdoors,avoid doing so during peak sun hours"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/stf_fl_ladder"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="-16dp"
+
+            android:animationCache="true"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+
+            app:cardBackgroundColor="#9BD0F1"
+
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+
+            <LinearLayout
+                android:id="@+id/stf_layout_sleep_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+
+                    app:srcCompat="@drawable/water10"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Avoid caffeine or alchol if your becoming dehydrated"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/stf_fl_ladder2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="-16dp"
+            android:animationCache="true"
+
+            >
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@drawable/bg_squiricle_white"
+                android:elevation="4dp" />
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:animationCache="true"
+            app:cardBackgroundColor="#9BD0F1"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/stf_layout_wakeup_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_white"
+                    android:backgroundTint="#E8FBFF"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+
+                    app:srcCompat="@drawable/water2"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:animationCache="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Hydrate well by drinking lots of water.Always have some with you"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

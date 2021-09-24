@@ -7,11 +7,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MenuItem;
+
 import android.view.MotionEvent;
+
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Water extends AppCompatActivity {
+    Button btnGo;
 
     private static final int SWIPE_MIN_DISTANCE = 120;
     private static final int SWIPE_MAX_OFF_PATH = 250;
@@ -25,6 +32,18 @@ public class Water extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_water);
+
+        btnGo= findViewById(R.id.btngo);
+
+
+        btnGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Water.this,waterDetails.class);
+                Toast.makeText(getApplicationContext(), "Welcome!Let's get started", Toast.LENGTH_SHORT).show();
+                startActivity(i);
+            }
+        });
 
 
         //Initialize And Assign variable

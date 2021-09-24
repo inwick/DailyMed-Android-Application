@@ -110,11 +110,11 @@
         </LinearLayout>
 
 
-
         <TextView
             android:id="@+id/tvSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-light"
             android:paddingLeft="20dp"
             android:text="@string/tvSettings"
@@ -137,7 +137,7 @@
                 android:id="@+id/stf_layout_about"
 
                 android:layout_width="match_parent"
-                android:layout_height="63dp"
+                android:layout_height="68dp"
                 android:animationCache="true"
 
                 android:clickable="true"
@@ -177,22 +177,21 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="8dp"
                         android:paddingEnd="8dp"
-                        android:paddingBottom="8dp"
-                        android:text="@string/works"
+                        android:paddingBottom="0dp"
+                        android:text="Tips You Need to Know"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/tvFacts"
-                        android:layout_width="match_parent"
-                        android:layout_height="35dp"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="8dp"
-                        android:paddingBottom="8dp"
-
-                        android:text="@string/tvFacts"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/btnTips2"
+                        android:layout_width="123dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="GoTips"
+                        android:text="Click Here"
+                        android:textSize="10sp"
+                        app:backgroundTint="#8DC5D8" />
 
 
                 </LinearLayout>
@@ -219,7 +218,7 @@
                 android:id="@+id/stf_layout_gender"
 
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="72dp"
                 android:animationCache="true"
 
                 android:clickable="true"
@@ -254,7 +253,7 @@
 
                     <TextView
                         android:id="@+id/tvGender"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="8dp"
                         android:paddingEnd="8dp"
@@ -262,19 +261,18 @@
                         android:text="@string/tvGender"
 
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
-                    <TextView
-                        android:id="@+id/stf_tv_gender"
-                        android:layout_width="match_parent"
-                        android:layout_height="35dp"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="8dp"
-                        android:paddingBottom="8dp"
-                        android:textColor="@color/black"
-
-                        android:textSize="12sp"
-                        tools:text="Female" />
+                    <Button
+                        android:id="@+id/btnTips3"
+                        android:layout_width="111dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="GoTips"
+                        android:text="Change"
+                        android:textSize="10sp"
+                        app:backgroundTint="#8DC5D8" />
 
 
                 </LinearLayout>
@@ -334,27 +332,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvWeight"
+                        android:id="@+id/tvActivities"
                         android:layout_width="289dp"
                         android:layout_height="wrap_content"
                         android:paddingStart="8dp"
                         android:paddingEnd="8dp"
                         android:paddingBottom="8dp"
-                        android:text="@string/tvWeight"
+                        android:text="Daily Activities"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/stf_tv_weight"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="8dp"
-                        android:paddingBottom="8dp"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-
-                        tools:text="512 kg" />
+                    <Button
+                        android:id="@+id/btnTips"
+                        android:layout_width="111dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="GoTips"
+                        android:text="Change"
+                        android:textSize="10sp"
+                        app:backgroundTint="#8DC5D8" />
 
 
                 </LinearLayout>
@@ -364,16 +361,6 @@
 
 
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:animationCache="true"
-            app:cardElevation="4dp"
-            app:cardMaxElevation="4dp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -389,7 +376,7 @@
                 android:id="@+id/stf_layout_intake"
 
                 android:layout_width="match_parent"
-                android:layout_height="81dp"
+                android:layout_height="98dp"
                 android:animationCache="true"
 
                 android:clickable="true"
@@ -414,9 +401,9 @@
                     tools:ignore="ContentDescription,VectorDrawableCompat" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="318dp"
 
-                    android:layout_height="wrap_content"
+                    android:layout_height="81dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:animationCache="true"
@@ -430,10 +417,10 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="8dp"
                         android:paddingEnd="8dp"
-                        android:paddingBottom="8dp"
+                        android:paddingBottom="0dp"
                         android:text="@string/tvWaterIntake"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tvwaterIntake"
@@ -441,20 +428,20 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="8dp"
                         android:paddingEnd="8dp"
-                        android:paddingBottom="8dp"
-                        android:text="@string/tvwaterIntake"
-                        android:textSize="12sp" />
+                        android:paddingBottom="0dp"
+                        android:text="@string/Watertarget"
+                        android:textSize="10sp" />
 
-                    <TextView
-                        android:id="@+id/stf_tv_intake"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="8dp"
-                        android:paddingBottom="8dp"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
-                        tools:text="1500ml" />
+                    <Button
+                        android:id="@+id/btnChangeTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="goEditTotal"
+                        android:text="Change Target"
+                        android:textSize="10sp"
+                        app:backgroundTint="#8DC5D8" />
 
 
                 </LinearLayout>
@@ -574,6 +561,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
+                android:onClick="resetRecords"
                 android:padding="10dp"
                 android:text="@string/btnreset"
                 app:backgroundTint="@color/waterbtn"
@@ -591,6 +579,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
+                android:onClick="deleteWaterrecord"
                 android:padding="10dp"
                 android:text="@string/btndeletewater"
                 app:backgroundTint="@color/waterbtn"
@@ -605,12 +594,13 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
                 android:orientation="horizontal">
 
                 <com.google.android.material.bottomnavigation.BottomNavigationView
                     android:id="@+id/bottom_navigation"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="82dp"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="0dp"
                     android:baselineAligned="false"
@@ -621,6 +611,7 @@
                     app:itemTextColor="@drawable/selector"
                     app:menu="@menu/menu_navigation" />
             </LinearLayout>
+
         </LinearLayout>
 
 

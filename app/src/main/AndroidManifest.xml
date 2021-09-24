@@ -11,12 +11,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DAILYMED">
 
+
         <activity android:name=".SplashScreen">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        <activity android:name=".waterDetails"> </activity>
+        <activity android:name="changeTotal" ></activity>
+        <activity android:name=".Selectwateramount"></activity>
+        <activity android:name=".Changewatersettings"> </activity>
+        <activity android:name=".Tips"> </activity>
+        <activity android:name=".Waterdashboard"> </activity>
+        <activity android:name=".amtCoffee"> </activity>
+        <activity android:name=".amtWater"> </activity>
+        <activity android:name=".amtJuice"> </activity>
+        <activity android:name=".amtTea"> </activity>
+        <activity android:name=".amtCola"> </activity>
+        <activity android:name=".amtEnergyDrink"> </activity>
+        <activity android:name=".Fitness" />
+        <activity android:name=".Pill" />
+        <activity android:name=".Water" >   <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".Heart" />
+        <activity android:name=".Home">
+
+
         </activity>
         <activity android:name=".HeartRateUpdate" />
         <activity android:name=".HeartReport" />
