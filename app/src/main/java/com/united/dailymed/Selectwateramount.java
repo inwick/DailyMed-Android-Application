@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class Selectwateramount extends AppCompatActivity {
 
-    ImageView imageCoffee,imageJuice,imageTea,imageWine,imageWater,imageCola,imageEnergyDrink;
+    ImageView imageCoffee,imageJuice,imageTea,imageWine,imageWater,imageCola,imageEnergyDrink,imagecustom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class Selectwateramount extends AppCompatActivity {
         imageWine = findViewById(R.id.CupWine);
         imageCola = findViewById(R.id.CupCola);
         imageEnergyDrink = findViewById(R.id.CupEnergyDrink);
+        imagecustom = findViewById(R.id.cupCustom);
 
 
 
@@ -36,7 +37,7 @@ public class Selectwateramount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Selectwateramount.this,amtCoffee.class);
-                Toast.makeText(getApplicationContext(), "You have Selected Coffee", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "You have selected Coffee", Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });
@@ -45,7 +46,7 @@ public class Selectwateramount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Selectwateramount.this,amtJuice.class);
-                Toast.makeText(getApplicationContext(),"You Selected Water",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"You have selected Juice",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });
@@ -54,7 +55,7 @@ public class Selectwateramount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Selectwateramount.this,amtWater.class);
-                Toast.makeText(getApplicationContext(),"You Selected Water",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"You have selected Water",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });
@@ -62,7 +63,7 @@ public class Selectwateramount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Selectwateramount.this,amtTea.class);
-                Toast.makeText(getApplicationContext(),"You Selected Water",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"You have selected Tea",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });
@@ -71,7 +72,7 @@ public class Selectwateramount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Selectwateramount.this,amtCola.class);
-                Toast.makeText(getApplicationContext(),"You Selected Water",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"You have selected Cola",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });
@@ -80,7 +81,7 @@ public class Selectwateramount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Selectwateramount.this,amtWine.class);
-                Toast.makeText(getApplicationContext(),"You Selected Water",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"You have selected Wine",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });
@@ -89,11 +90,19 @@ public class Selectwateramount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Selectwateramount.this,amtEnergyDrink.class);
-                Toast.makeText(getApplicationContext(),"You Selected Water",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"You have selected Energy drink",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });
 
+        imagecustom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Selectwateramount.this,amtEnergyDrink.class);
+                Toast.makeText(getApplicationContext(),"You have selected Custom",Toast.LENGTH_SHORT).show();
+                startActivity(i);
+            }
+        });
 
 
 
