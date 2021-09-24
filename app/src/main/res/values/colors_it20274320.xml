@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroun">#F6ECF0</color>
+    <color name="botemtop">#ffd7ba</color>
+    <color name="textcolor">#000000</color>
+    <color name="texbox_background">#ffffff</color>
+    <color name="botem_icons">#0099cc</color>
+
+</resources>

@@ -42,17 +42,17 @@
             app:navigationIcon="@drawable/menu" />
 
         <LinearLayout
-            android:layout_width="807dp"
-            android:layout_height="281dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="56dp"
+            android:baselineAligned="false"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:baselineAligned="false">
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linearLayout7"
-                android:layout_width="940dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -122,13 +122,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#22000000"
-                >
+                android:background="#22000000">
 
                 <TextView
                     android:id="@+id/heart_report_line_02"
-                    android:layout_width="245dp"
+                    android:layout_width="match_parent"
                     android:layout_height="63dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
                     android:fontFamily="@font/comfortaa_bold"
                     android:gravity="center_horizontal"
                     android:text="@string/heart_report_tips_txt"
@@ -137,15 +138,17 @@
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.38"
+                    app:layout_constraintHorizontal_bias="0.495"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.307" />
+                    app:layout_constraintVertical_bias="0.371" />
 
                 <Button
                     android:id="@+id/heart_btn_report_tips"
-                    android:layout_width="200dp"
-                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
                     android:backgroundTint="@color/heart_landing_new"
                     android:fontFamily="@font/comfortaa_bold"
                     android:text="@string/heart_tips_btn_tips_browse"
@@ -154,10 +157,10 @@
                     app:backgroundTint="#3F51B5"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.416"
+                    app:layout_constraintHorizontal_bias="0.495"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.642"
+                    app:layout_constraintVertical_bias="0.688"
                     tools:ignore="SmallSp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

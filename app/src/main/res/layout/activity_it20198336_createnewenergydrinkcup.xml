@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/waterbackgroundcolor"
-    tools:context=".Createnewcup">
+    android:onClick="updateAmount"
+    >
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -13,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/navbarcolor"
+        app:itemBackground="@color/waternavigation"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@color/waterbackgroundcolor"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,8 +33,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="398dp"
-            android:layout_height="627dp"
+            android:layout_width="410dp"
+            android:layout_height="642dp"
             android:layout_marginTop="20dp"
             android:background="@color/waterbackgroundcolor"
             android:orientation="vertical">
@@ -94,6 +95,18 @@
                 app:layout_constraintTop_toTopOf="parent" />
             />
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-thin"
+                android:text="Select your drank amount in ml:"
+                android:textColor="#00000B"
+                android:textSize="16sp" />
+
             <SeekBar
                 android:id="@+id/seekBarEnergyDrink"
                 android:layout_width="match_parent"
@@ -114,6 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="updateAmount"
                     android:text="@string/EnergyDone"
                     app:backgroundTint="@color/waterbutton"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -143,13 +157,6 @@
                     tools:ignore="OnClick" />
 
 
-
-
-
-
-
-
-
             </LinearLayout>
 
 
@@ -167,7 +174,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_margin="0dp"
-        android:background="@color/navbarcolor"
+        android:background="@color/waternavigation"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"

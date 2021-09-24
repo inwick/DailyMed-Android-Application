@@ -6,25 +6,176 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Water"
-    android:background="@color/white">
+    android:background="@drawable/waterdrop"
+    android:gravity="center">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerInParent="true"
-        app:srcCompat="@drawable/icon_water_botnav"
-        tools:ignore="VectorDrawableCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginRight="-2dp"
+            android:background="@color/waternavigation"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <ImageButton
+            android:id="@+id/backbtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="340dp"
+            android:layout_marginRight="340dp"
+            android:layout_marginBottom="684dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"/>
+        <!--            app:srcCompat="@drawable/ic_backbtn" -->
+
+        <ImageButton
+            android:id="@+id/menuBtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="355dp"
+            android:layout_marginLeft="355dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="685dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"/>
+        <!--            app:srcCompat="@drawable/ic_menu" -->
+
+
+
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottom_navigation"
-        app:itemBackground="@color/navbarcolor"
-        app:itemTextColor="@drawable/selector"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/waternavigation"
         app:itemIconTint="@drawable/selector"
-        app:menu="@menu/menu_navigation"
-        android:layout_alignParentBottom="true"/>
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="271dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="428dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Hi,"
+        android:textColor="#00000B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="298dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="I'm your personal hydration "
+        android:textColor="#00000B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="328dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="companion"
+        android:textColor="#00000B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="243dp"
+        android:text="In order to provide tailored hydration advice,I could to get some basic information.And I'll keep this a secret." />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="136dp"
+        android:text="Let's go"
+        android:textSize="20sp"
+        app:backgroundTint="@color/waterbtn"
+        app:cornerRadius="20dp" />
 
 
 </RelativeLayout>
