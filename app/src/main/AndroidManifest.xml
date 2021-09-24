@@ -20,7 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
 
             </intent-filter>
-      </activity>
+
+        </activity>
+
 
 
         <activity android:name=".EditDietPlan"/> 
@@ -50,11 +52,7 @@
         <activity android:name=".amtEnergyDrink"> </activity>
         <activity android:name=".Fitness" />
         <activity android:name=".Pill" />
-        <activity android:name=".Water" >   <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".Water" />
         <activity android:name=".Heart" />
         <activity android:name=".Home">
 
@@ -65,22 +63,9 @@
         <activity android:name=".HeartTips" />
         <activity android:name=".HeartHistory" />
         <activity android:name=".HeartAddEntry" />
-        <activity android:name=".Createnewcup"/>
-        <activity android:name=".waterDetails" />
-        <activity android:name=".Selectwateramount" />
-        <activity android:name=".Changewatersettings"/>
-        <activity android:name=".Waterdashboard"/>
-        <activity android:name=".amtCoffee"/>
-        <activity android:name=".amtWater"/>
-        <activity android:name=".amtJuice"/>
-        <activity android:name=".amtTea"/>
-        <activity android:name=".amtCola"/>
-        <activity android:name=".amtEnergyDrink"/>
-        <activity android:name=".Fitness" />
-        <activity android:name=".Pill" />
-        <activity android:name=".Water" />
-        <activity android:name=".Heart" />
-        <activity android:name=".Home"/>
+
+
+
 
 
         <meta-data
