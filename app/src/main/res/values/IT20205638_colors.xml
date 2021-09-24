@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="landing_btn_color">#ff758f</color>
+    <color name="heart_landing_boxes">#ff4d6d</color>
+    <color name="heart_landing_boxes_middle">#33FF4D6D</color>
+    <color name="heart_landing_btn_text">#fff0f3</color>
+    <color name="heart_landing_headings">#C9184A</color>
+    <color name="heart_tips_box_secondary">#fff0f3</color>
+    <color name="heart_landing_new">#D4FF4D6D</color>
+</resources>

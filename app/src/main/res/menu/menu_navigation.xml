@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Pill"
+        android:title="@string/heading_pill"
+        android:icon="@drawable/icon_pill_botnav"/>
+
     <item
         android:id="@+id/Heart"
-        android:title="@string/heading_heart"
-        android:icon="@drawable/icon_heartrate_botnav"/>
+        android:icon="@drawable/icon_heartrate_botnav"
+        android:title="@string/heading_heart" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/icon_home_botnav"
+        android:title="@string/heading_home" />
 
     <item
         android:id="@+id/Water"
         android:title="@string/heading_water"
         android:icon="@drawable/icon_water_botnav"/>
-    <item
-        android:id="@+id/home"
-        android:title="@string/heading_home"
-        android:icon="@drawable/icon_home_botnav"/>
+
     <item
         android:id="@+id/Fitness"
         android:title="@string/heading_fitness"
         android:icon="@drawable/icon_fitness_botnav"/>
-    <item
-        android:id="@+id/Pill"
-        android:title="@string/heading_pill"
-        android:icon="@drawable/icon_pill_botnav"/>
+
 </menu>

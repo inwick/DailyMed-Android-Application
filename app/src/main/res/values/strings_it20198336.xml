@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btnStart">Start</string>
+    <string name="tvCupSelect">Switch Cup</string>
+    <string name="tv300ml">300ml</string>
+    <string name="tv100ml">100ml</string>
+    <string name="tv500ml">500ml</string>
+    <string name="tv1000ml">1000ml</string>
+    <string name="tv2000ml">2000ml</string>
+    <string name="tvCustom">Custom</string>
+    <string name="btnChange">Change</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="title_activity_watertracker_dashboard">WatertrackerDashboard</string>
+    <string name="TodayProgress">Today you drank</string>
+    <string name="btnAddDrink">Add a Drink</string>
+    <string name="btnChangeDetails">Change my details</string>
+    <string name="title_activity_change_water_details">ChangeWaterDetails</string>
+    <string name="btneditmydeails">Edit my details</string>
+    <string name="btneditdeatails" />
+    <string name="btneditmyDetails">Edit my details</string>
+    <string name="works">How it works?</string>
+    <string name="resetwaterRecord">Reset Water Record</string>
+    <string name="btnresetwaterRecord">reset water record</string>
+    <string name="btndeletewaterrecord">Delete Water Record</string>
+    <string name="btnreset">Reset my water record</string>
+    <string name="btndeletewater">Delete my water record</string>
+    <string name="tvSettings">Change Settings</string>
+    <string name="btnChangeSettings">Change Settings</string>
+    <string name="tvRemaining">Remaining</string>
+    <string name="tvcupsizeselect">Switch Cup Size</string>
+    <string name="btnCancelcup">Cancel</string>
+    <string name="btnDone">Done</string>
+    <string name="tvFacts">Click for facts to know</string>
+    <string name="tvGender">Gender</string>
+    <string name="tvWeight">Weight</string>
+    <string name="tvWaterIntake">Water Intake</string>
+    <string name="tvdailynoti">Daily Notifications</string>
+    <string name="stf_tv_daily_notif">Show notification reminder to drink water every few hours is OFF</string>
+    <string name="tvIntake">Your custom waterintake target is 1500ml on daily basis. Tap to edit.</string>
+    <string name="tvwaterIntake">Your custom water intake target is 1500ml on daily basis.Tap to edit.</string>
+    <string name="txtCoffee">Coffee</string>
+    <string name="txtJuice">Juice</string>
+    <string name="txtTea">Tea</string>
+    <string name="txtCola">Cola</string>
+    <string name="txtWine">Wine</string>
+    <string name="txtEnergydrink">Energy Drink</string>
+    <string name="txtWater">Water</string>
+    <string name="tvcupselect">Select a drink</string>
+    <string name="cancelCoffee">cancelCoffee</string>
+    <string name="WineDone">done</string>
+    <string name="EnergyDrinkDone">Done</string>
+    <string name="ColaDone">Done</string>
+    <string name="EnergyDone">Done</string>
+    <string name="JuiceDone">Done</string>
+    <string name="TeaDone">Done</string>
+    <string name="WaterDone">Done</string>
+    <string name="CoffeeDone">Done</string>
+    <string name="Winedone">Done</string>
+    <string name="tvWelcome">Welcome</string>
+    <string name="btnGo">let\'s go</string>
+    <string name="btnletsgo">LET\'S GO</string>
+    <string name="Watertarget">The recommended daily intake is:3.7 liters of fluids a day for men.About 2.7 liters of fluids a day for women.</string>
+
+
+</resources>
