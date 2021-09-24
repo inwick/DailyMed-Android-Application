@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/white">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/heart_landing_boxes"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/heart_landing_boxes"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/headId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/carter_one_regular"
+            android:text="@string/landing_heading"
+            android:textColor="@color/heart_landing_headings"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/carter_one_regular"
+            app:layout_constraintEnd_toStartOf="@+id/LogoId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/sloganId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="@string/landing_slogan"
+            android:textColor="@color/heart_landing_headings"
+            app:layout_constraintEnd_toStartOf="@+id/LogoId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headId"
+            tools:ignore="UnknownId" />
+
+        <ImageView
+            android:id="@+id/LogoId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/headId"
+            app:layout_constraintTop_toTopOf="@+id/headId"
+            app:srcCompat="@drawable/heart_ic_main_image"
+            tools:ignore="VectorDrawableCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/constraintLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:layout_editor_absoluteY="176dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/heart_landing_boxes_middle"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/heart_img_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/heart_ic_main_add"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/btn_heart_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/heart_landing_btn_text"
+                    android:backgroundTint="@color/landing_btn_color"
+                    android:text="@string/landing_addentry" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/heart_landing_boxes_middle"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/heart_img_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/heart_ic_main_edit"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/btn_heart_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/landing_btn_color"
+                    android:textColor="@color/heart_landing_btn_text"
+                    android:text="@string/landing_edit" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/heart_landing_boxes_middle"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/heart_img_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/heart_ic_main_tips"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/btn_heart_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/landing_btn_color"
+                    android:textColor="@color/heart_landing_btn_text"
+                    android:text="@string/landing_tips" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/heart_landing_boxes_middle"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/heart_img_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/heart_ic_main_history"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/btn_heart_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/landing_btn_color"
+                    android:textColor="@color/heart_landing_btn_text"
+                    android:text="@string/landing_summary" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
