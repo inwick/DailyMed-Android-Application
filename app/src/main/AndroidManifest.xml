@@ -50,7 +50,6 @@
         <activity android:name=".amtTea"> </activity>
         <activity android:name=".amtCola"> </activity>
         <activity android:name=".amtEnergyDrink"> </activity>
-        <activity android:name=".Fitness" />
         <activity android:name=".Pill" />
         <activity android:name=".Water" />
         <activity android:name=".Heart" />
@@ -73,10 +72,6 @@
             android:resource="@array/preloaded_fonts" />
 
 
-        </activity>
-
-
-      
     </application>
 
 </manifest>
