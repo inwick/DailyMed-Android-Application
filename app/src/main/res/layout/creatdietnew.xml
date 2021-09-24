@@ -30,7 +30,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="461dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -46,25 +46,7 @@
         android:orientation="vertical">
 
         <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:text="ID"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/diet_update_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:focusable="false"
-            android:gravity="center"
-
-            android:inputType="textPersonName" />
-
-        <TextView
-
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center"
@@ -72,16 +54,15 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/diet_update_date"
+            android:id="@+id/diet_add_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:focusable="false"
             android:gravity="center"
             android:inputType="textPersonName" />
 
         <TextView
-
+            android:id="@+id/textView18"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:gravity="center"
@@ -89,7 +70,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/diet_update_breakfast"
+            android:id="@+id/diet_add_breakfast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -97,7 +78,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-
+            android:id="@+id/textView19"
             android:layout_width="match_parent"
             android:layout_height="49dp"
             android:gravity="center"
@@ -105,7 +86,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/diet_update_lunch"
+            android:id="@+id/diet_add_lunch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -113,7 +94,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-
+            android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="43dp"
             android:gravity="center"
@@ -121,45 +102,27 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/diet_update_dinner"
+            android:id="@+id/diet_add_dinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName" />
 
-        <LinearLayout
+        <Button
+            android:id="@+id/add_diet_plan"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/diet_btn_update_diet_plan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="UPDATE PLAN"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:backgroundTint="@color/botemtop" />
-
-            <Button
-                android:id="@+id/diet_btn_delete_diet_plan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="DELETE PLAN"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:backgroundTint="@color/botemtop" />
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:text="ADD DIET PLAN"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="16sp"
+            app:backgroundTint="@color/botemtop" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="98dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -168,16 +131,16 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="61dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="537dp"
+        android:layout_marginBottom="518dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
-            android:layout_height="92dp"
+            android:layout_height="wrap_content"
             app:srcCompat="@drawable/img_diet_main_food" />
     </LinearLayout>
 

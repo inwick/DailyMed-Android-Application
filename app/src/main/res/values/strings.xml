@@ -19,6 +19,7 @@
     <string name="adddietheder">ADD DIET PLAN</string>
     <string name="edit_diet_day_drop" />
     <string name="edit_diet_dfood">Pizza</string>
+    <string name="add_dietbreak_fast">add_breakfast</string>
 
 
 </resources>

@@ -80,7 +80,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/editdietbutton"
+        android:id="@+id/adddietbutton"
         android:layout_width="182dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -102,7 +102,7 @@
         app:backgroundTint="@color/botemtop" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/viewdietplan"
         android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:layout_alignParentStart="true"
@@ -121,6 +121,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textAllCaps="false"
         app:backgroundTint="@color/botemtop" />
 
     <androidx.appcompat.widget.Toolbar
