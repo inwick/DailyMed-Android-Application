@@ -49,6 +49,7 @@
         <activity android:name=".amtJuice"> </activity>
         <activity android:name=".amtTea"> </activity>
         <activity android:name=".amtCola"> </activity>
+      <activity android:name=".amtWine"> </activity>
         <activity android:name=".amtEnergyDrink"> </activity>
         <activity android:name=".Pill" />
         <activity android:name=".Water" />

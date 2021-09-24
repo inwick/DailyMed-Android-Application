@@ -95,7 +95,7 @@ public class Changewatersettings extends AppCompatActivity {
     }
 
     public void GoTips(View view) {
-        btnChangeTips= findViewById(R.id.btnTips);
+        btnChangeTips= findViewById(R.id.btnActivities);
         btnChangeTips.setOnClickListener(new View.OnClickListener()
 
         {
