@@ -96,7 +96,7 @@ public class HeartAddEntry extends AppCompatActivity {
 
 
         //Set Heart Selected
-        bottomNavigationView.setSelectedItemId(R.id.Heart);
+        bottomNavigationView.setSelectedItemId(R.id.Water);
 
         //Perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
