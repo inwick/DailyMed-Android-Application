@@ -2,6 +2,7 @@
 <resources>
     <color name="imgBtnColor">#72DF77</color>
     <color name="todoPillColor">#98E89B</color>
+    <color name="editTextColor">#BAF3BC</color>
     <color name="PressedtodoPillColor">#96D398</color>
     <color name="fabColor">#F6884D</color>
     <color name="btnColor">#26B879</color>

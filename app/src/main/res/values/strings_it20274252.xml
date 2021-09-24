@@ -3,11 +3,14 @@
     <string name="pageTitle">My Daily Pills</string>
     <string name="pdHeading">Pill Details</string>
     <string name="pillNameHint">Enter Pill Name</string>
-    <string name="descriptionHint">Description</string>
+    <string name="timeHint">Enter Time</string>
     <string name="addBtnTxt">Add</string>
     <string name="dailyPill">My Daily Pills</string>
     <string name="pillDetails">Add Pill Details</string>
     <string name="updatePillDetails">Update Details</string>
     <string name="updateBtnTxt">Update</string>
     <string name="nmpSlogan">Never Miss Pills</string>
+    <string name="pillTime">Time</string>
+    <string name="timeTxt">12.00</string>
+
 </resources>
