@@ -12,59 +12,44 @@
         android:theme="@style/Theme.DAILYMED">
 
 
-
-        <activity android:name=".SplashScreen">
-      
-      <intent-filter>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
-
         </activity>
 
 
+        <activity android:name=".EditDietPlan" />
+        <activity android:name=".DietPlan" />
+        <activity android:name=".AddDietPlan" />
 
-        <activity android:name=".EditDietPlan"/> 
-        <activity android:name=".DietPlan"/>
-
-     
-
-        <activity android:name=".AddDietPlan"/>
-
-
-        <activity android:name=".Fitness"/>
-
-            
-        
-
-        <activity android:name=".waterDetails"> </activity>
-        <activity android:name="changeTotal" ></activity>
-        <activity android:name=".Selectwateramount"></activity>
-        <activity android:name=".Changewatersettings"> </activity>
-        <activity android:name=".Tips"> </activity>
-        <activity android:name=".Waterdashboard"> </activity>
-        <activity android:name=".amtCoffee"> </activity>
-        <activity android:name=".amtWater"> </activity>
-        <activity android:name=".amtJuice"> </activity>
-        <activity android:name=".amtTea"> </activity>
-        <activity android:name=".amtCola"> </activity>
-        <activity android:name=".amtEnergyDrink"> </activity>
+        <activity android:name=".Fitness" />
         <activity android:name=".Pill" />
         <activity android:name=".Water" />
+        <activity android:name=".Home" />
         <activity android:name=".Heart.Heart" />
-        <activity android:name=".Home">
 
+        <activity android:name=".waterDetails" />
+        <activity android:name="changeTotal" />
+        <activity android:name=".Selectwateramount" />
+        <activity android:name=".Changewatersettings" />
+        <activity android:name=".Tips" />
+        <activity android:name=".Waterdashboard" />
+        <activity android:name=".amtCoffee" />
+        <activity android:name=".amtWater" />
+        <activity android:name=".amtJuice" />
+        <activity android:name=".amtTea" />
+        <activity android:name=".amtCola" />
+        <activity android:name=".amtEnergyDrink" />
 
-        </activity>
         <activity android:name=".Heart.HeartRateUpdate" />
         <activity android:name=".Heart.HeartReport" />
         <activity android:name=".Heart.HeartTips" />
         <activity android:name=".Heart.HeartHistory" />
         <activity android:name=".Heart.HeartAddEntry" />
-
-
-
 
 
         <meta-data
