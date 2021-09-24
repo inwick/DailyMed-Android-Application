@@ -59,7 +59,7 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="-2dp"
                 android:layout_marginRight="-2dp"
-                android:background="@color/navbarcolor"
+                android:background="@color/waternavigation"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme" />
 
@@ -606,7 +606,7 @@
                     android:baselineAligned="false"
                     android:paddingBottom="0dp"
 
-                    app:itemBackground="@color/navbarcolor"
+                    app:itemBackground="@color/waternavigation"
                     app:itemIconTint="@drawable/selector"
                     app:itemTextColor="@drawable/selector"
                     app:menu="@menu/menu_navigation" />

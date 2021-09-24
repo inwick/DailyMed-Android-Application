@@ -322,7 +322,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/navbarcolor"
+        app:itemBackground="@color/waternavigation"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -341,13 +341,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:background="@color/navbarcolor"
+        android:background="@color/waternavigation"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
