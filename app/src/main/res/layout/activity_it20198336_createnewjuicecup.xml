@@ -21,7 +21,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992"
         app:menu="@menu/menu_navigation"
-        tools:layout_editor_absoluteX="126dp" />
+        tools:layout_editor_absoluteX="126dp"
+        android:background="@color/waterback"/>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -110,7 +111,7 @@
 
             <SeekBar
                 android:id="@+id/seekBarJuice"
-                android:layout_width="match_parent"
+                android:layout_width="385dp"
                 android:layout_height="113dp"
                 android:max="2000" />
 

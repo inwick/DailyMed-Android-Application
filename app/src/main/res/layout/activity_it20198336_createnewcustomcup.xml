@@ -155,7 +155,8 @@
                 app:itemBackground="@color/waternavigation"
                 app:itemIconTint="@drawable/selector"
                 app:itemTextColor="@color/waterbackgroundcolor"
-                app:menu="@menu/menu_navigation" />
+                app:menu="@menu/menu_navigation"
+                android:background="@color/waterback"/>
 
 
         </LinearLayout>
