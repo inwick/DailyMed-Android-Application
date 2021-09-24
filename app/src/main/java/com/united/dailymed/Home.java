@@ -3,19 +3,15 @@ package com.united.dailymed;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MenuItem;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.util.Calendar;
+import com.united.dailymed.Heart.Heart;
 
 public class Home extends AppCompatActivity {
 

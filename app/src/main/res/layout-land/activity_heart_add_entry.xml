@@ -114,7 +114,7 @@
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_headings"
                         android:textColorHint="@color/heart_landing_headings"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/heart_form_hint_size"
                         tools:ignore="Autofill,Deprecated" />
 
 
@@ -134,7 +134,7 @@
                         android:textAlignment="center"
                         android:textColor="@color/heart_landing_boxes"
                         android:textColorHint="@color/heart_landing_headings"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/heart_form_hint_size"
                         tools:ignore="TextFields" />
 
 
@@ -150,7 +150,7 @@
                         android:fontFamily="@font/comfortaa_bold"
                         android:text="@string/heart_entry_btn_record_txt"
                         android:textColor="@color/heart_landing_btn_text"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/heart_button_form_size"
                         app:backgroundTint="@color/heart_landing_boxes"
                         tools:ignore="SmallSp" />
 

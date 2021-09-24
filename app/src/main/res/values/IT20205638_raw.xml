@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="heart_button_size">14sp</dimen>
+    <dimen name="heart_button_form_size">12sp</dimen>
+    <dimen name="heart_form_hint_size">16sp</dimen>
+    <dimen name="heart_form_custom_size">300dp</dimen>
+    <dimen name="heart_button_default_size">70dp</dimen>
+    <dimen name="heart_frame_size">250dp</dimen>
+    <dimen name="heart_text_field_size">100dp</dimen>
 </resources>

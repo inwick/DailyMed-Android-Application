@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.united.dailymed.Heart.Heart;
 
 import java.util.ArrayList;
 
@@ -54,7 +55,7 @@ public class DietPlan extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch(menuItem.getItemId()) {
                     case R.id.Heart:
-                        startActivity(new Intent(getApplicationContext(),Heart.class));
+                        startActivity(new Intent(getApplicationContext(), Heart.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.home:

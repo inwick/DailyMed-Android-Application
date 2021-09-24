@@ -1,11 +1,9 @@
-package com.united.dailymed;
+package com.united.dailymed.Heart;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -13,10 +11,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.united.dailymed.Fitness;
+import com.united.dailymed.Home;
+import com.united.dailymed.Pill;
+import com.united.dailymed.R;
+import com.united.dailymed.Utils.HeartDBHandler;
+import com.united.dailymed.Water;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -27,7 +30,6 @@ public class HeartRateUpdate extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heart_rate_update);
@@ -40,7 +42,6 @@ public class HeartRateUpdate extends AppCompatActivity {
         Button deleteEntryBtn;
         HeartDBHandler dbHandler;
         String rateFetched, dateFetched, id;
-
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -75,7 +76,6 @@ public class HeartRateUpdate extends AppCompatActivity {
             return false;
         });
 
-
         // initializing all our variables.
         idEdt = findViewById(R.id.idEdtid);
         courseNameEdt = findViewById(R.id.idEdtCourseName);
@@ -92,16 +92,13 @@ public class HeartRateUpdate extends AppCompatActivity {
         rateFetched = getIntent().getStringExtra("rate");
         dateFetched = getIntent().getStringExtra("date");
 
-
         // setting data to edit text
         // of our update activity.
         idEdt.setText(id);
         courseNameEdt.setText(rateFetched);
         dateInput.setText(dateFetched);
 
-
         final Calendar myCalendar = Calendar.getInstance();
-
 
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 
@@ -127,7 +124,7 @@ public class HeartRateUpdate extends AppCompatActivity {
                 .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                 myCalendar.get(Calendar.DAY_OF_MONTH)).show());
 
-        // adding on click listener to our update course button.
+            // adding on click listener to our update course button.
         updateEntryBtn.setOnClickListener(v -> {
 
             // inside this method we are calling an update course
@@ -142,14 +139,8 @@ public class HeartRateUpdate extends AppCompatActivity {
             startActivity(i);
         });
 
-
         //calling a method to delete our course.
-        //                dbHandler.deleteHeartEntry(id);
-        //                Toast.makeText(HeartRateUpdate.this, "Deleted the course", Toast.LENGTH_SHORT).show();
-        //                Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
-        //                startActivity(i);
         deleteEntryBtn.setOnClickListener(this::showAlertDialog);
-
     }
 
     public void showAlertDialog(View v) {
@@ -159,7 +150,6 @@ public class HeartRateUpdate extends AppCompatActivity {
         alert.setMessage("Are you sure to delete record?");
         alert.setPositiveButton("Yes", (dialog, which) -> {
             HeartDBHandler dbHandler = new HeartDBHandler(HeartRateUpdate.this);
-            ;
             String id;
             id = getIntent().getStringExtra("id");
             dbHandler.deleteHeartEntry(id);
@@ -170,11 +160,8 @@ public class HeartRateUpdate extends AppCompatActivity {
         alert.setNegativeButton("No", (dialog, which) -> {
             Intent i = new Intent(HeartRateUpdate.this, HeartHistory.class);
         });
-
         AlertDialog alertDialog = alert.create();
         alertDialog.show();
 
     }
-
-
 }
