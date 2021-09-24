@@ -10,15 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DAILYMED">
-        <activity android:name=".AddPills"></activity>
-        <activity android:name=".activity_pill_update" />
-        <activity android:name=".activity_pill_added" />
-        <activity android:name=".Home" />
+        <activity android:name=".Pill" />
         <activity android:name=".Fitness" />
-        <activity android:name=".activity_pill_details" />
         <activity android:name=".Water" />
         <activity android:name=".Heart" />
-        <activity android:name=".Pill">
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
