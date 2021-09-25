@@ -35,7 +35,7 @@ public class HeartRateUpdate extends AppCompatActivity {
         setContentView(R.layout.activity_heart_rate_update);
 
         // variables for our edit text, button, strings and dbhandler class.
-        EditText courseNameEdt;
+        EditText heartRateEdt;
         TextView idEdt;
         EditText dateInput;
         Button updateEntryBtn;
@@ -78,7 +78,7 @@ public class HeartRateUpdate extends AppCompatActivity {
 
         // initializing all our variables.
         idEdt = findViewById(R.id.idEdtid);
-        courseNameEdt = findViewById(R.id.idEdtCourseName);
+        heartRateEdt = findViewById(R.id.idEdtCourseName);
         dateInput = findViewById(R.id.idEdtCourseDuration);
         updateEntryBtn = findViewById(R.id.idBtnUpdateCourse);
         deleteEntryBtn = findViewById(R.id.idBtnDelete);
@@ -95,7 +95,7 @@ public class HeartRateUpdate extends AppCompatActivity {
         // setting data to edit text
         // of our update activity.
         idEdt.setText(id);
-        courseNameEdt.setText(rateFetched);
+        heartRateEdt.setText(rateFetched);
         dateInput.setText(dateFetched);
 
         final Calendar myCalendar = Calendar.getInstance();
@@ -124,12 +124,17 @@ public class HeartRateUpdate extends AppCompatActivity {
                 .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                 myCalendar.get(Calendar.DAY_OF_MONTH)).show());
 
-            // adding on click listener to our update course button.
+        // adding on click listener to our update heart rate button.
         updateEntryBtn.setOnClickListener(v -> {
+
+            if (heartRateEdt.getText().toString().isEmpty() || dateInput.getText().toString().isEmpty()) {
+                Toast.makeText(HeartRateUpdate.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
             // inside this method we are calling an update course
             // method and passing all our edit text values.
-            dbHandler.updateHeartRate(idEdt.getText().toString(), courseNameEdt.getText().toString(), dateInput.getText().toString());
+            dbHandler.updateHeartRate(idEdt.getText().toString(), heartRateEdt.getText().toString(), dateInput.getText().toString());
 
             // displaying a toast message that our course has been updated.
             Toast.makeText(HeartRateUpdate.this, "Record Updated Successfully.", Toast.LENGTH_SHORT).show();

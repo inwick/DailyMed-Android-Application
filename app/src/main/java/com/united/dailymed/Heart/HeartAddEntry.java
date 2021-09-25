@@ -87,7 +87,7 @@ public class HeartAddEntry extends AppCompatActivity {
             }
 
             // on below line we are calling a method to add new
-            // course to sqlite data and pass all our values to it.
+            // heart rate to sqlite data and pass all our values to it.
             dbHandler.addNewHeartEntry(hRate, entryDate);
 
             // after adding the data we are displaying a toast message.
