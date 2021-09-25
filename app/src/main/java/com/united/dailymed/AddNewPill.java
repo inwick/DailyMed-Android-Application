@@ -109,8 +109,6 @@ public class AddNewPill extends BottomSheetDialogFragment {
                 if (finalIsUpdate){
                     db.updatePill(bundle.getInt("id"), text);
                     db.updatePillTime(bundle.getInt("id"), text1);
-
-
                 }
                 else{
                     PillModel pill = new PillModel();

@@ -65,28 +65,20 @@ public class changeTotal extends AppCompatActivity {
     }
 
 
-    /********************************************* THE UPDATE TOTAL METHOD ********************************************************/
+    /* THE UPDATE GOAL METHOD **/
     @SuppressLint("ShowToast")
     public void updateTotal(View view) {
     //getting the ids of required components
         edtTotal = findViewById(R.id.editTextTotal);
-
         btnResetTotal = findViewById(R.id.btnUpdateTotal);
-
         //instance of db
         WaterDBHandler waterdbhandler = new WaterDBHandler(this);
-
         //converting to String
         Double total = Double.parseDouble(edtTotal.getText().toString());
-
-
-
         //validation
         if (!total.isNaN()) {
 
             Double tot = Double.parseDouble(edtTotal.getText().toString());
-
-
             long val = waterdbhandler.updateTotal(tot);
 
             if (val > 0) {
@@ -104,8 +96,6 @@ public class changeTotal extends AppCompatActivity {
 
 
         /* UPDATING AMOUNT WHEN A NEW AMOUNT IS ADDED */
-
-
         Double drankAlready = waterdbhandler.getDrank();
         // Double totDrank = (Double.parseDouble(txtCoffee.getText().toString())*0.8)+drankAlready;
 
@@ -140,7 +130,7 @@ public class changeTotal extends AppCompatActivity {
         return ((amt-(drankAlready)));
     }
 
-}
+   }
 
 
 
