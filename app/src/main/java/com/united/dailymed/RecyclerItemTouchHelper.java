@@ -42,10 +42,14 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             adapter.deleteItem(position);
+                            Toast toast = Toast.makeText(adapter.getContext(),
+                                    "Pill details were deleted", Toast.LENGTH_SHORT);
+                            toast.show();
                         }
 
                     });
             builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     adapter.notifyItemChanged(viewHolder.getAdapterPosition());
