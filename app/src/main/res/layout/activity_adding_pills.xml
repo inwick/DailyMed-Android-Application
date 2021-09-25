@@ -10,7 +10,9 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:hint="@string/pillNameHint" />
+        android:hint="@string/pillNameHint"
+        android:inputType="text"
+        android:autofillHints="@string/pillNameHint" />
 
     <EditText
         android:id="@+id/newPillTime"
@@ -19,7 +21,9 @@
         android:background="@null"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:layout_marginTop="50dp"
-        android:hint="@string/timeHint" />
+        android:hint="@string/timeHint"
+        android:inputType="number"
+        android:autofillHints="@string/timeHint" />
 
 
     <Button
@@ -28,11 +32,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/newPillText"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:background="@android:color/transparent"
         android:text="@string/addBtnTxt"
         android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:enabled="false"/>
 
 </RelativeLayout>
