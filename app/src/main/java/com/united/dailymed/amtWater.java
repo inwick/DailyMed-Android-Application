@@ -61,7 +61,7 @@ public class amtWater extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         //Set Heart Selected
-        bottomNavigationView.setSelectedItemId(R.id.Heart);
+        bottomNavigationView.setSelectedItemId(R.id.Water);
 
         //Perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
