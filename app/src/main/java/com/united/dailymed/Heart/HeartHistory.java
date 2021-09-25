@@ -34,7 +34,7 @@ public class HeartHistory extends AppCompatActivity {
         HeartRateModelArrayList = new ArrayList<>();
         HeartdbHandler = new HeartDBHandler(HeartHistory.this);
 
-        // getting our course array
+        // getting our heart array
         // list from db handler class.
         HeartRateModelArrayList = HeartdbHandler.readHeartRates();
 

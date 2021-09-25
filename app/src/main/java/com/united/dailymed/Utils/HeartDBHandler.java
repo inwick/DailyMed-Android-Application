@@ -52,7 +52,7 @@ public class HeartDBHandler extends SQLiteOpenHelper {
         db.execSQL(query);
     }
 
-    // this method is use to add new course to our sqlite database.
+
     public void addNewHeartEntry(String heartRate, String date) {
 
         // on below line we are creating a variable for
@@ -77,6 +77,7 @@ public class HeartDBHandler extends SQLiteOpenHelper {
         // database after adding database.
         db.close();
     }
+
     // we have created a new method for reading all the courses.
     public ArrayList<HeartRateModel> readHeartRates() {
         // on below line we are creating a
