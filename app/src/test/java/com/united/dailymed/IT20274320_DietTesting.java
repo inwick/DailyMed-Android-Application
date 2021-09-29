@@ -1,4 +1,4 @@
-package com.united.dailymed.Heart;
+package com.united.dailymed;
 
 import com.united.dailymed.AddDietInfo;
 
