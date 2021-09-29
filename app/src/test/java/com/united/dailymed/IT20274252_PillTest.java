@@ -1,5 +1,7 @@
 package com.united.dailymed;
 
+import com.united.dailymed.Pill.addPillDetails;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
