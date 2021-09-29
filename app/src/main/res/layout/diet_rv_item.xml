@@ -17,7 +17,7 @@
         android:layout_margin="3dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="#A1FFD7BA"
+        android:background="#FFD7BA"
         android:orientation="vertical">
 
         <LinearLayout
