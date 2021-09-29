@@ -8,7 +8,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-
 public class IT20205638_HeartReportTest {
 
     private static calHearRateAverage cal;
