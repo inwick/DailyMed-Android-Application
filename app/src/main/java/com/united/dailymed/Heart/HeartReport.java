@@ -30,8 +30,9 @@ public class HeartReport extends AppCompatActivity {
         HeartDBHandler heartdb = new HeartDBHandler(HeartReport.this);
         int HeartTotal = heartdb.sumHeartRates();
         int noOfEntries = heartdb.noOfEntries();
+        calHearRateAverage calHrtRtAvg = new calHearRateAverage();
 
-        float Average = (float) HeartTotal / (float) noOfEntries;
+        float Average = calHrtRtAvg.calAverage(HeartTotal, noOfEntries);
 
         textview.setText(String.valueOf((double) Math.round(Average * 10d / 10d)));
 
@@ -76,4 +77,6 @@ public class HeartReport extends AppCompatActivity {
 
         });
     }
+
+
 }
