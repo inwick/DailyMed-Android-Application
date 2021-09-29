@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:gravity="center"
-    tools:context=".AddDietPlan">
+    tools:context=".Diet.AddDietPlan">
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.DAILYMED">
 
         <activity
-            android:name=".SplashScreen"
+            android:name=".Home.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,69 +21,69 @@
         </activity>
 
         <activity
-            android:name=".EditDietPlan"
+            android:name=".Diet.EditDietPlan"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".DietPlan"
+            android:name=".Diet.DietPlan"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AddDietPlan"
+            android:name=".Diet.AddDietPlan"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Fitness" />
+            android:name=".Diet.Diet" />
 
         <activity
-            android:name=".waterDetails"
+            android:name=".Water.waterDetails"
             android:screenOrientation="portrait" />
         <activity
-            android:name="changeTotal"
+            android:name=".Water.changeTotal"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".changeGender"
+            android:name=".Water.changeGender"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Selectwateramount"
+            android:name=".Water.Selectwateramount"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Changewatersettings"
+            android:name=".Water.Changewatersettings"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Tips"
+            android:name=".Water.Tips"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Waterdashboard"
+            android:name=".Water.Waterdashboard"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".changeActivities"
+            android:name=".Water.changeActivities"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".amtCoffee"
+            android:name=".Water.amtCoffee"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".amtWater"
+            android:name=".Water.amtWater"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".amtJuice"
+            android:name=".Water.amtJuice"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".amtTea"
+            android:name=".Water.amtTea"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".amtCola"
+            android:name=".Water.amtCola"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".amtWine"
+            android:name=".Water.amtWine"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".amtEnergyDrink"
+            android:name=".Water.amtEnergyDrink"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Water" />
+            android:name=".Water.Water" />
 
-        <activity android:name=".Pill" />
+        <activity android:name=".Pill.Pill" />
 
         <activity android:name=".Heart.Heart" />
-        <activity android:name=".Home" />
+        <activity android:name=".Home.Home" />
         <activity android:name=".Heart.HeartRateUpdate" />
         <activity android:name=".Heart.HeartReport" />
         <activity android:name=".Heart.HeartTips" />

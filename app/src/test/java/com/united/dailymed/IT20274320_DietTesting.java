@@ -1,6 +1,6 @@
 package com.united.dailymed;
 
-import com.united.dailymed.AddDietInfo;
+import com.united.dailymed.Diet.AddDietInfo;
 
 import org.junit.After;
 import org.junit.AfterClass;

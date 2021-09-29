@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/waterdrop"
     android:gravity="center"
-    tools:context=".Water">
+    tools:context=".Water.Water">
 
 
     <androidx.appcompat.widget.Toolbar

@@ -1,6 +1,5 @@
 package com.united.dailymed.Adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -10,13 +9,12 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.united.dailymed.AddNewPill;
-import com.united.dailymed.Pill;
+import com.united.dailymed.Pill.AddNewPill;
+import com.united.dailymed.Pill.Pill;
 import com.united.dailymed.Model.PillModel;
 import com.united.dailymed.R;
 import com.united.dailymed.Utils.DatabaseHandler;
