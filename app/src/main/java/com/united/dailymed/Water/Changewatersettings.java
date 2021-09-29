@@ -23,7 +23,6 @@ import com.united.dailymed.Home.Home;
 import com.united.dailymed.Pill.Pill;
 import com.united.dailymed.R;
 import com.united.dailymed.Utils.WaterDBHandler;
-import com.united.dailymed.changeActivities;
 
 public class Changewatersettings extends AppCompatActivity {
 
