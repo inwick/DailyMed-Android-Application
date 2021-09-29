@@ -84,6 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:text="In order to provide tailored hydration advice,I could to get some basic information.And I'll keep this a secret." />
     </LinearLayout>
 
