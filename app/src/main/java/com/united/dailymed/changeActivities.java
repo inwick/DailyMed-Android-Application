@@ -30,6 +30,7 @@ public class changeActivities extends AppCompatActivity {
     Button btnDailyActivities;
     RadioGroup rgNewActivities;
     Button btnReset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

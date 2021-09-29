@@ -54,7 +54,7 @@
             android:name=".Water.Waterdashboard"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Water.changeActivities"
+            android:name="changeActivities"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Water.amtCoffee"
