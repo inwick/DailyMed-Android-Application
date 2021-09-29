@@ -31,7 +31,6 @@ public class Heart extends AppCompatActivity {
 
         gestureDetector = new GestureDetector(this, new Heart.SwipeDetector());
 
-
         final Button button_add_heart = (Button) findViewById(R.id.btn_heart_add);
         final Button button_add_history = (Button) findViewById(R.id.btn_heart_history);
         final Button button_add_tips = (Button) findViewById(R.id.btn_heart_tips);
