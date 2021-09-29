@@ -198,7 +198,7 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="670dp"
         android:gravity="center"
-        android:text="ADD DIET PLAN"
+        android:text="UPDATE DIET PLAN"
         android:textColor="@color/black"
         android:textSize="24sp" />
 

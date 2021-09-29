@@ -73,13 +73,15 @@ public class AddDietPlan extends AppCompatActivity {
         EditText Breakfast = findViewById(R.id.diet_add_breakfast);
         EditText Lunch = findViewById(R.id.diet_add_lunch);
         EditText Dinner = findViewById(R.id.diet_add_dinner);
-        Button addHeartEntry = findViewById(R.id.diet_btn_add_diet_plan);
+        Button addDietEntry = findViewById(R.id.diet_btn_add_diet_plan);
         DietDBHandler dbHandler = new DietDBHandler(AddDietPlan.this);
 
-        addHeartEntry.setOnClickListener(v -> {
+        // Add diet plan.
+
+        addDietEntry.setOnClickListener(v -> {
 
 
-            // below line is to get data from all edit text fields.
+
             String entryDate = edittext.getText().toString();
             String breakfast = Breakfast.getText().toString();
             String lunch = Lunch.getText().toString();
