@@ -1,6 +1,8 @@
 package com.united.dailymed.Adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,10 +55,12 @@ public class PillAdapter extends RecyclerView.Adapter<PillAdapter.ViewHolder> {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
                     db.updateStatus(item.getId(),1);
+                    holder.pill.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
 
                 }
                 else{
                     db.updateStatus(item.getId(),0);
+                    holder.pill.setPaintFlags(0);
                 }
             }
         });
