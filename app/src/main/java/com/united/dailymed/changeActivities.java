@@ -1,4 +1,4 @@
-package com.united.dailymed;
+package com.united.dailymed.Water;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -18,9 +18,8 @@ import com.united.dailymed.Diet.Diet;
 import com.united.dailymed.Heart.Heart;
 import com.united.dailymed.Home.Home;
 import com.united.dailymed.Pill.Pill;
+import com.united.dailymed.R;
 import com.united.dailymed.Utils.WaterDBHandler;
-import com.united.dailymed.Water.Water;
-import com.united.dailymed.Water.Waterdashboard;
 
 public class changeActivities extends AppCompatActivity {
 
