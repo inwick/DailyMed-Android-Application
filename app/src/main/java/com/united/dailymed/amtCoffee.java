@@ -111,7 +111,7 @@ public class amtCoffee extends AppCompatActivity {
             //Creating the LayoutInflater instance
             LayoutInflater li = getLayoutInflater();
             //Getting the View object as defined in the custom toast.xml file
-            View layout = li.inflate(R.layout.activity_it20198336_custom_toast_coffee,(ViewGroup) findViewById(R.id.custom_toast_coffee));
+            View layout = li.inflate(R.layout.activity_it20198336_custom_toast_coffee,(ViewGroup) findViewById(R.id.custom_toast_tea));
             //Creating the Toast object
             Toast toast = new Toast(getApplicationContext());
             toast.setDuration(Toast.LENGTH_SHORT);
