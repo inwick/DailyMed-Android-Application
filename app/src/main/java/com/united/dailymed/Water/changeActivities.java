@@ -14,7 +14,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.united.dailymed.Diet.Diet;
 import com.united.dailymed.Heart.Heart;
+import com.united.dailymed.Home.Home;
+import com.united.dailymed.Pill.Pill;
+import com.united.dailymed.Utils.WaterDBHandler;
+import com.united.dailymed.Water.Water;
+import com.united.dailymed.Water.Waterdashboard;
 
 public class changeActivities extends AppCompatActivity {
 
@@ -45,19 +51,19 @@ public class changeActivities extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.home:
-                        startActivity(new Intent(getApplicationContext(),Home.class));
+                        startActivity(new Intent(getApplicationContext(), Home.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.Fitness:
-                        startActivity(new Intent(getApplicationContext(),Fitness.class));
+                        startActivity(new Intent(getApplicationContext(), Diet.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.Pill:
-                        startActivity(new Intent(getApplicationContext(),Pill.class));
+                        startActivity(new Intent(getApplicationContext(), Pill.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.Water:
-                        startActivity(new Intent(getApplicationContext(),Water.class));
+                        startActivity(new Intent(getApplicationContext(), Water.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
