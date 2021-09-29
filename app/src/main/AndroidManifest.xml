@@ -39,6 +39,9 @@
             android:name="changeTotal"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".changeGender"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Selectwateramount"
             android:screenOrientation="portrait" />
         <activity
@@ -49,6 +52,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Waterdashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".changeActivities"
             android:screenOrientation="portrait" />
         <activity
             android:name=".amtCoffee"
