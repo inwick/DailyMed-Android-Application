@@ -30,7 +30,7 @@ public class changeActivities extends AppCompatActivity {
     public void changeActivities(View view) {
 
         btnDailyActivities = findViewById(R.id.btnActivities);
-        btnReset = findViewById(R.id.btnSetActivities);
+        btnReset = findViewById(R.id.btnSetGender);
         rgNewActivities = findViewById(R.id.GenderGroup);
 
 

@@ -30,7 +30,7 @@ public class changeGender extends AppCompatActivity {
     public void changeGender(View view) {
 
         btnChangeGender = findViewById(R.id.btnGender);
-        btnReset = findViewById(R.id.btnSetActivities);
+        btnReset = findViewById(R.id.btnSetGender);
         rgNewGender = findViewById(R.id.GenderGroup);
 
 

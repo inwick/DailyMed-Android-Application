@@ -136,14 +136,17 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/btnSetActivities"
+            android:id="@+id/btnSetGender"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="27dp"
+            android:background="@color/waterbtn"
             android:onClick="changeGender"
-            android:text="Reset" />
+            android:text="Reset"
+            app:backgroundTint="@color/waterbutton"
+            app:cornerRadius="20dp" />
 
 
     </RelativeLayout>
