@@ -54,7 +54,7 @@ public class Water extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Water.this,Waterdashboard.class);
-                Toast.makeText(getApplicationContext(), "Welcome!Let's get started", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Redirected to waterdashboard", Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });

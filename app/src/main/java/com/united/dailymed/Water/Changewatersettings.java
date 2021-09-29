@@ -53,7 +53,7 @@ Button btnReset;
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         //Set Heart Selected
-        bottomNavigationView.setSelectedItemId(R.id.Heart);
+        bottomNavigationView.setSelectedItemId(R.id.Water);
 
         //Perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -141,140 +141,6 @@ Button btnReset;
             }
         });
     }
-
-
-//        /********************************************* POP UP TO CHANGE Gender********************************************************/
-//        public void updateGdr(View view) {
-//           myDialog.setContentView(R.layout.popup);
-//            btnTotal = (Button) myDialog.findViewById(R.id.btnChangeTotal);
-//            btnReset = (Button) myDialog.findViewById(R.id.btnSetTotal);
-//            etNewTotal = (EditText) myDialog.findViewById(R.id.etnewTotal);
-//
-//
-//            btnReset.setOnClickListener(view1 -> {
-//
-//
-////               changeTotal(etNewTotal);//calling update method to change the time
-//                Toast.makeText(getApplicationContext(),"Update Success",Toast.LENGTH_SHORT).show();
-//
-//            });
-//
-//            myDialog.show();
-//        }//end of on click
-
-
-//        //instance of db helper
-//        WaterDBHandler waterdbhandler = new WaterDBHandler(this);
-//
-//        //db instance
-//        SQLiteDatabase db = waterdbhandler.getReadableDatabase();
-//        final Cursor cursor =waterdbhandler.getInfo(db);
-//
-//        // components from main.xml
-//        btnTotal = findViewById(R.id.btnChangeTotal);
-//        tvresult = findViewById(R.id.tvChangeTotal);
-//        totalAmt = getIntent().getStringExtra(WaterDBHandler.total_COL);
-//
-//        // add button listener
-//        btnTotal.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View arg0) {
-//
-//                // get prompts.xml view
-//                LayoutInflater li = LayoutInflater.from(context);
-//                View promptsView = li.inflate(R.layout.prompts, null);
-//
-//                android.app.AlertDialog.Builder alertDialogBuilder = new android.app.AlertDialog.Builder(
-//                        context);
-//
-//                // set prompts.xml to alertdialog builder
-//                alertDialogBuilder.setView(promptsView);
-//
-//                final EditText userInput = (EditText) promptsView
-//                        .findViewById(R.id.editTextDialogUserInput);
-//
-//                // set dialog message
-//                alertDialogBuilder
-//                        .setCancelable(false)
-//                        .setPositiveButton("OK",
-//                                new DialogInterface.OnClickListener() {
-//                                    public void onClick(DialogInterface dialog,int id) {
-//
-//                                        // get user input and set it to result
-//                                        // edit text
-//                                        tvresult.setText(totalAmt);
-//                                    }
-//                                })
-//                        .setNegativeButton("Cancel",
-//                                new DialogInterface.OnClickListener() {
-//                                    public void onClick(DialogInterface dialog, int id) {
-//                                        dialog.cancel();
-//                                    }
-//                                });
-//
-//                // create alert dialog
-//                android.app.AlertDialog alertDialog = alertDialogBuilder.create();
-//
-//                // show it
-//                alertDialog.show();
-//
-//            }
-//        });
-//    }
-
-
-        //db instance
-        // SQLiteDatabase db = waterdbhandler.getReadableDatabase();
-        //final Cursor cursor =waterdbhandler.getInfo(db);
-
-        //retrieving values when the class is created
-        //  while (cursor.moveToNext())
-
-        // {
-        //retrieving total amount
-        // String totalAmt = cursor.getString(cursor.getColumnIndex(WaterDBHandler.total_COL));
-        //getting the id of text view
-        //TextView txtTotal = findViewById(R.id.totalAmt);
-        // tvresult = findViewById(R.id.tvChangeTotal);
-        //setting the value textView
-        // tvresult.setText(totalAmt + " ml");
-
-
-        // }
-
-//     String totalAmt = getIntent().getStringExtra(WaterDBHandler.total_COL);
-//     tvResult.setText(totalAmt);
-//
-
-
-        /********************************************* UPDATE METHOD TO CHANGE THE Goal
-         * @param ********************************************************/
-
-
-//        public void changeTotal(EditText etNewTotal){
-//            WaterDBHandler waterdbhelper=new WaterDBHandler(this);
-//            System.out.println("Look here 2");
-//             System.out.println(rgNewTime);
-//           EditText editText = (EditText) myDialog.findViewById(etNewTotal.getId());
-//            //System.out.println("look here 3:"+radioButton.getText().toString());
-//
-//            //calling the update method in db helper
-//            long val=waterdbhelper.updateTotal(Integer.parseInt(editText.getText().toString()));
-//
-//            if(val>0)
-//            {
-//                myDialog.dismiss();
-//
-//            }
-//            else
-//            {
-//                Toast.makeText(this,"Update Failed",Toast.LENGTH_SHORT).show();
-//                myDialog.dismiss();
-//            }
-//        }//end of method
-
-
 
 
     /* THE DELETE METHOD */
