@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,7 +28,10 @@ public class Changewatersettings extends AppCompatActivity {
     Dialog myDialog;
     Button btngotopopup;
     Button btnChangeTips;
-
+    Button btnDailyActivities;
+    Button btnChangeGender;
+    RadioGroup rgNewActivities;
+Button btnReset;
 //    final Context context = this;
 //    private Button btnTotal;
 //    private TextView tvresult;
@@ -106,50 +110,32 @@ public class Changewatersettings extends AppCompatActivity {
             }
         });
     }
+    public void goEditActivities(View view) {
 
 
-//    /********************************************* POP UP TO CHANGE Gender ********************************************************/
-//    public void changeGender(View view) {
-//        myDialog.setContentView(R.layout.popup);
-//        btnExercise = (Button) myDialog.findViewById(R.id.btnChangeExerciseTime);
-//        Button btnReset = (Button) myDialog.findViewById(R.id.btnSetTime);
-//        rgNewTime = (RadioGroup)myDialog.findViewById(R.id.timeGroup);
-//
-//
-//        btnReset.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                changeTime(rgNewTime);//calling update method to change the time
-//                Toast.makeText(getApplicationContext(),"Update Success",Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
-//
-//        myDialog.show();
-//    }//end of on click
-//
-//    /********************************************* UPDATE METHOD TO CHANGE THE TIME ********************************************************/
-//    public void changeTime(RadioGroup rgNewTime){
-//        DBOpenHelper dbHelper=new DBOpenHelper(this);
-//        //System.out.println("Look here 2");
-//        // System.out.println(rgNewTime);
-//        RadioButton radioButton = (RadioButton) myDialog.findViewById(rgNewTime.getCheckedRadioButtonId());
-//        //System.out.println("look here 3:"+radioButton.getText().toString());
-//
-//        //calling the update method in db helper
-//        long val=dbHelper.updateTime(Integer.parseInt(radioButton.getText().toString()));
-//
-//        if(val>0)
-//        {
-//            myDialog.dismiss();
-//
-//        }
-//        else
-//        {
-//            Toast.makeText(this,"Update Failed",Toast.LENGTH_SHORT).show();
-//            myDialog.dismiss();
-//        }
-//    }//end of method
+        btnDailyActivities = findViewById(R.id.btnActivities);
+        btnDailyActivities.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //myDialog.setContentView(R.layout.popup);
+                Intent i = new Intent(Changewatersettings.this, changeActivities.class);
+                startActivity(i);
+            }
+        });
+    }
+    public void goEditGender(View view) {
+
+
+        btnChangeGender = findViewById(R.id.btnGender);
+        btnChangeGender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //myDialog.setContentView(R.layout.popup);
+                Intent i = new Intent(Changewatersettings.this, changeGender.class);
+                startActivity(i);
+            }
+        });
+    }
 
 
 //        /********************************************* POP UP TO CHANGE Gender********************************************************/

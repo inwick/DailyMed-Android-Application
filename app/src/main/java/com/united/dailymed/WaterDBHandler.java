@@ -328,6 +328,56 @@ public class WaterDBHandler extends SQLiteOpenHelper {
 //    }//End of method
 
 
+    /********************************************************* METHOD TO UPDATE Activities*******************************************************************/
+    public int updateActivities(String activities){
+        SQLiteDatabase db = getReadableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(activities_COL,activities);
+
+
+        String selection = ID_COL + " LIKE ?";
+        String[] selectionArgs = {"1"};
+
+        int count = db.update(
+                TABLE_NAME,
+                contentValues,
+                selection,
+                selectionArgs
+        );
+
+        return count;
+
+    }//end of update time method
+
+
+    /********************************************************* METHOD TO UPDATE Gender*******************************************************************/
+    public int updateGender(String gender){
+        SQLiteDatabase db = getReadableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(gender_COL,gender);
+
+
+        String selection = ID_COL + " LIKE ?";
+        String[] selectionArgs = {"1"};
+
+        int count = db.update(
+                TABLE_NAME,
+                contentValues,
+                selection,
+                selectionArgs
+        );
+
+        return count;
+
+    }//end of update time method
+
+
+
+
+
+
     /* METHOD TO RETRIEVE Total */
     public Integer getResetTotal(){
         SQLiteDatabase db = getReadableDatabase();

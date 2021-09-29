@@ -123,20 +123,18 @@ public class amtJuice extends AppCompatActivity {
 
 //            //Creating the LayoutInflater instance
 //            LayoutInflater li = getLayoutInflater();
-//
 //            //Getting the View object as defined in the custom toast.xml file
-//            View layout = li.inflate(R.layout.activity_it20198336_custom_toast_juice,(ViewGroup) findViewById(R.id.custom_toast_juice));
-//
+//            View layout = li.inflate(R.layout.activity_it20198336_custom_toast_juice,(ViewGroup)findViewById(R.id.custom_toast_juice));
 //            //Creating the Toast object
 //            Toast toast = new Toast(getApplicationContext());
 //            toast.setDuration(Toast.LENGTH_SHORT);
 //            toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
 //            toast.setView(layout);
 //            toast.show();
-//
-//            Intent i = new Intent(amtJuice.this,Waterdashboard.class);
-//
-//            startActivity(i);
+
+            Intent i = new Intent(amtJuice.this,Waterdashboard.class);
+
+            startActivity(i);
 
         }
         else
