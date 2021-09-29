@@ -14,12 +14,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.united.dailymed.Fitness;
-import com.united.dailymed.Home;
-import com.united.dailymed.Pill;
+import com.united.dailymed.Diet.Diet;
+import com.united.dailymed.Home.Home;
+import com.united.dailymed.Pill.Pill;
 import com.united.dailymed.R;
 import com.united.dailymed.Utils.HeartDBHandler;
-import com.united.dailymed.Water;
+import com.united.dailymed.Water.Water;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -86,6 +86,11 @@ public class HeartAddEntry extends AppCompatActivity {
                 return;
             }
 
+            if (Integer.parseInt(hRate) > 300){
+                Toast.makeText(HeartAddEntry.this, "The maximum Heart-rate cannot be more than 300bpm.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             // on below line we are calling a method to add new
             // heart rate to sqlite data and pass all our values to it.
             dbHandler.addNewHeartEntry(hRate, entryDate);
@@ -116,7 +121,7 @@ public class HeartAddEntry extends AppCompatActivity {
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.Fitness:
-                        startActivity(new Intent(getApplicationContext(), Fitness.class));
+                        startActivity(new Intent(getApplicationContext(), Diet.class));
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.Pill:

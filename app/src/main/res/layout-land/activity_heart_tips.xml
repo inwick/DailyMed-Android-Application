@@ -7,7 +7,7 @@
     android:id="@+id/home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
+    tools:context=".Home.Home"
     android:background="@drawable/heart_new_land_background">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

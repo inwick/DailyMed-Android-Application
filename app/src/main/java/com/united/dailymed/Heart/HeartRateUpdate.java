@@ -14,12 +14,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.united.dailymed.Fitness;
-import com.united.dailymed.Home;
-import com.united.dailymed.Pill;
+import com.united.dailymed.Diet.Diet;
+import com.united.dailymed.Home.Home;
+import com.united.dailymed.Pill.Pill;
 import com.united.dailymed.R;
 import com.united.dailymed.Utils.HeartDBHandler;
-import com.united.dailymed.Water;
+import com.united.dailymed.Water.Water;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -60,7 +60,7 @@ public class HeartRateUpdate extends AppCompatActivity {
                     overridePendingTransition(0, 0);
                     return true;
                 case R.id.Fitness:
-                    startActivity(new Intent(getApplicationContext(), Fitness.class));
+                    startActivity(new Intent(getApplicationContext(), Diet.class));
                     overridePendingTransition(0, 0);
                     return true;
                 case R.id.Pill:
@@ -129,6 +129,11 @@ public class HeartRateUpdate extends AppCompatActivity {
 
             if (heartRateEdt.getText().toString().isEmpty() || dateInput.getText().toString().isEmpty()) {
                 Toast.makeText(HeartRateUpdate.this, "Please enter all the data.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if (Integer.parseInt(heartRateEdt.getText().toString()) > 300){
+                Toast.makeText(HeartRateUpdate.this, "The maximum Heart-rate cannot be more than 300bpm.", Toast.LENGTH_SHORT).show();
                 return;
             }
 

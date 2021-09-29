@@ -8,11 +8,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.united.dailymed.Fitness;
-import com.united.dailymed.Home;
-import com.united.dailymed.Pill;
+import com.united.dailymed.Diet.Diet;
+import com.united.dailymed.Home.Home;
+import com.united.dailymed.Pill.Pill;
 import com.united.dailymed.R;
-import com.united.dailymed.Water;
+import com.united.dailymed.Water.Water;
 
 public class HeartTips extends AppCompatActivity {
 
@@ -42,7 +42,7 @@ public class HeartTips extends AppCompatActivity {
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.Fitness:
-                        startActivity(new Intent(getApplicationContext(), Fitness.class));
+                        startActivity(new Intent(getApplicationContext(), Diet.class));
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.Pill:
