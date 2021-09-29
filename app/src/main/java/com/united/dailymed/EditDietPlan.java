@@ -185,7 +185,7 @@ public class EditDietPlan extends AppCompatActivity {
                DietDBHandler dbHandler = new DietDBHandler(EditDietPlan.this);
                 ;
                 String id;
-                id = getIntent().getStringExtra("id");
+                id = getIntent().getStringExtra("Id");
                 dbHandler.deletePlan(id);
                 Toast.makeText(EditDietPlan.this, "Record Deleted Successfully..", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(EditDietPlan.this, DietPlan.class);
