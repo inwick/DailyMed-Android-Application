@@ -1,14 +1,19 @@
 package com.united.dailymed;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.united.dailymed.Heart.Heart;
 
 
 public class changeGender extends AppCompatActivity {
@@ -24,9 +29,46 @@ public class changeGender extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popupgender);
 
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        //Set Heart Selected
+        bottomNavigationView.setSelectedItemId(R.id.Water);
+
+        //Perform ItemSelectedListener
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch(menuItem.getItemId()) {
+                    case R.id.Heart:
+                        startActivity(new Intent(getApplicationContext(), Heart.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(),Home.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Fitness:
+                        startActivity(new Intent(getApplicationContext(),Fitness.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Pill:
+                        startActivity(new Intent(getApplicationContext(),Pill.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Water:
+                        startActivity(new Intent(getApplicationContext(),Water.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+
+                return false;
+            }
+
+        });
+
     }
 
-    /********************************************* POP UP TO CHANGE gender ********************************************************/
+    /* POP UP TO CHANGE gender */
     public void changeGender(View view) {
 
         btnChangeGender = findViewById(R.id.btnGender);
@@ -46,7 +88,7 @@ public class changeGender extends AppCompatActivity {
 
     }//end of on click
 
-    /********************************************* UPDATE METHOD TO CHANGE gender ********************************************************/
+    /* UPDATE METHOD TO CHANGE gender */
     public void changeGender(RadioGroup rgNewGender) {
         WaterDBHandler waterdbhandler = new WaterDBHandler(this);
         //System.out.println("Look here 2");
