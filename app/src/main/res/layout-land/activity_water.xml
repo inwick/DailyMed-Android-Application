@@ -38,8 +38,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginLeft="20dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,27 +80,20 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="In order to provide tailored hydration advice,I could to get some basic information.And I'll keep this a secret." />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:orientation="vertical"
+        android:layout_marginBottom="90dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
             android:id="@+id/btngodashboard"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="Water Dashboard"
             android:textSize="14sp"
@@ -109,10 +103,9 @@
         <Button
             android:id="@+id/btngo"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:text="start new"
