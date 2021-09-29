@@ -132,6 +132,11 @@ public class HeartRateUpdate extends AppCompatActivity {
                 return;
             }
 
+            if (Integer.parseInt(heartRateEdt.getText().toString()) > 300){
+                Toast.makeText(HeartRateUpdate.this, "The maximum Heart-rate cannot be more than 300bpm.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             // inside this method we are calling an update course
             // method and passing all our edit text values.
             dbHandler.updateHeartRate(idEdt.getText().toString(), heartRateEdt.getText().toString(), dateInput.getText().toString());

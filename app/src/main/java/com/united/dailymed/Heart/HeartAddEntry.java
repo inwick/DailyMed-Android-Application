@@ -86,6 +86,11 @@ public class HeartAddEntry extends AppCompatActivity {
                 return;
             }
 
+            if (Integer.parseInt(hRate) > 300){
+                Toast.makeText(HeartAddEntry.this, "The maximum Heart-rate cannot be more than 300bpm.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             // on below line we are calling a method to add new
             // heart rate to sqlite data and pass all our values to it.
             dbHandler.addNewHeartEntry(hRate, entryDate);
