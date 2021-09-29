@@ -1,4 +1,6 @@
-package com.united.dailymed.Heart;
+package com.united.dailymed;
+
+import com.united.dailymed.Heart.calHearRateAverage;
 
 import org.junit.After;
 import org.junit.AfterClass;
