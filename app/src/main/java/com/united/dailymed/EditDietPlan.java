@@ -45,7 +45,7 @@ public class EditDietPlan extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         //Set Heart Selected
-        bottomNavigationView.setSelectedItemId(R.id.Heart);
+        bottomNavigationView.setSelectedItemId(R.id.Fitness);
 
         //Perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

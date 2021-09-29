@@ -46,7 +46,6 @@ public class Fitness extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent i = new Intent(Fitness.this,AddDietPlan.class);
-                    Toast.makeText(getApplicationContext(), "Changes Applied", Toast.LENGTH_SHORT).show();
                     startActivity(i);
                 }
             });
@@ -58,7 +57,6 @@ public class Fitness extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Fitness.this,DietPlan.class);
-                Toast.makeText(getApplicationContext(), "Changes Applied", Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });

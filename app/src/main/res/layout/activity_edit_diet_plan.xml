@@ -39,7 +39,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="170dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="54dp"
@@ -57,10 +57,12 @@
             android:id="@+id/diet_update_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:ems="10"
+
             android:focusable="false"
             android:gravity="center"
-
             android:inputType="textPersonName" />
 
         <TextView
@@ -75,6 +77,8 @@
             android:id="@+id/diet_update_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:ems="10"
             android:focusable="false"
             android:gravity="center"
@@ -92,6 +96,8 @@
             android:id="@+id/diet_update_breakfast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName" />
@@ -108,6 +114,8 @@
             android:id="@+id/diet_update_lunch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName" />
@@ -124,6 +132,8 @@
             android:id="@+id/diet_update_dinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName" />
@@ -131,12 +141,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/diet_btn_update_diet_plan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:text="UPDATE PLAN"
                 android:textColor="@color/black"
@@ -147,6 +162,8 @@
                 android:id="@+id/diet_btn_delete_diet_plan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:text="DELETE PLAN"
                 android:textColor="@color/black"
@@ -157,29 +174,14 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="match_parent"
-        android:layout_height="98dp"
+        android:layout_height="70dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="537dp"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="match_parent"
-            android:layout_height="92dp"
-            app:srcCompat="@drawable/img_diet_main_food" />
-    </LinearLayout>
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/img_diet_main_food" />
 
     <TextView
         android:id="@+id/textView21"
@@ -193,7 +195,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="670dp"

@@ -30,8 +30,7 @@
             android:name=".AddDietPlan"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Fitness"
-            android:screenOrientation="portrait" />
+            android:name=".Fitness" />
 
         <activity
             android:name=".waterDetails"
@@ -73,8 +72,7 @@
             android:name=".amtEnergyDrink"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Water"
-            android:screenOrientation="portrait" />
+            android:name=".Water" />
 
         <activity android:name=".Pill" />
 

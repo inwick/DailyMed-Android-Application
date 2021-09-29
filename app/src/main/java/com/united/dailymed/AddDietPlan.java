@@ -99,7 +99,7 @@ public class AddDietPlan extends AppCompatActivity {
             dbHandler.addDietPlan(entryDate, breakfast,lunch,dinner);
 
             // after adding the data we are displaying a toast message.
-            Toast.makeText(AddDietPlan.this, "Heart-Rate Saved.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AddDietPlan.this, "Diet entry padded.", Toast.LENGTH_SHORT).show();
             Breakfast.setText("");
             Lunch.setText("");
             Dinner.setText("");
@@ -110,7 +110,7 @@ public class AddDietPlan extends AppCompatActivity {
 
 
         //Set Heart Selected
-        bottomNavigationView.setSelectedItemId(R.id.Heart);
+        bottomNavigationView.setSelectedItemId(R.id.Fitness);
 
         //Perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

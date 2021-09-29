@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/home"
-    android:background="@color/white"
+    android:background="@color/transparent"
     >
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -26,7 +26,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="#FFFFFF">
+        android:background="@color/transparent">
+
+
+        <!--recycler view for displaying our courses-->
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -38,12 +41,10 @@
             android:theme="?attr/actionBarTheme"
             app:layout_constraintBottom_toTopOf="@+id/idRVCourses"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/menu" />
-
-
-        <!--recycler view for displaying our courses-->
 
         <TextView
             android:id="@+id/textView2"
@@ -67,7 +68,8 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="tap_on_a_record_to_edit_or_delete_it"
+            android:layout_marginBottom="30dp"
+            android:text="(Tap on a record to edit or delete it.)"
             android:textColor="#1A841F"
             android:textSize="16sp"
             android:textStyle="italic"
