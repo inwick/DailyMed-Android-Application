@@ -2,9 +2,15 @@ package com.united.dailymed.Heart;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.DatePickerDialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,6 +39,7 @@ public class HeartAddEntry extends AppCompatActivity {
         setContentView(R.layout.activity_heart_add_entry);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
+        createNotificationChannel();
 
         final Calendar myCalendar = Calendar.getInstance();
 
@@ -68,12 +75,28 @@ public class HeartAddEntry extends AppCompatActivity {
         });
 
 
+        Intent intent = new Intent(this, HeartReport.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "daily_med_Heart")
+                .setSmallIcon(R.drawable.icon_heartrate_botnav)
+                .setContentTitle("Daily Med")
+                .setContentText("Heart-Rate saved. Click here to view the summary.")
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true);;
+
+
         EditText HeartRateEntry = findViewById(R.id.heart_add_heartrate);
         Button addHeartEntry = findViewById(R.id.btn_add_heart_entry);
         HeartDBHandler dbHandler = new HeartDBHandler(HeartAddEntry.this);
 
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
         addHeartEntry.setOnClickListener(v -> {
+
+            notificationManager.notify(100,builder.build());
 
             // below line is to get data from all edit text fields.
             String hRate = HeartRateEntry.getText().toString();
@@ -140,6 +163,21 @@ public class HeartAddEntry extends AppCompatActivity {
         });
 
 
+    }
+    private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "heart_rate_notify";
+            String description = "heart service notification";
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("daily_med_Heart", name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
     }
 
 }
