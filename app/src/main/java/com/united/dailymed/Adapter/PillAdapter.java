@@ -1,6 +1,7 @@
 package com.united.dailymed.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.united.dailymed.Pill.AddNewPill;
@@ -54,11 +56,14 @@ public class PillAdapter extends RecyclerView.Adapter<PillAdapter.ViewHolder> {
                 if (isChecked){
                     db.updateStatus(item.getId(),1);
                     holder.pill.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
+                    holder.pill.setTextColor(ContextCompat.getColor(getContext(),R.color.imgBtnColor));
 
                 }
                 else{
                     db.updateStatus(item.getId(),0);
                     holder.pill.setPaintFlags(0);
+                    holder.pill.setTextColor(Color.BLACK);
+
                 }
             }
         });

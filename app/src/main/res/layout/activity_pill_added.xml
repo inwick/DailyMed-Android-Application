@@ -29,6 +29,7 @@
             android:paddingStart="7dp"
             android:textSize="17sp"
             tools:ignore="RtlSymmetry"
+            android:textColor="@color/black"
             tools:text="Go to the market " />
 
         <TextView
