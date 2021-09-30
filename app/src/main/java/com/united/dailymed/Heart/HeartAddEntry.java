@@ -80,7 +80,7 @@ public class HeartAddEntry extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "daily_med_Heart")
-                .setSmallIcon(R.drawable.icon_heartrate_botnav)
+                .setSmallIcon(R.drawable.dailymed_ic_notify)
                 .setContentTitle("Daily Med")
                 .setContentText("Heart-Rate saved. Click here to view the summary.")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
